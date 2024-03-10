@@ -177,27 +177,27 @@ const socialCode3= document.getElementById('socialCode3')
 const socialCode4= document.getElementById('socialCode4')
 const socialCode5= document.getElementById('socialCode5')
 socialCode1.addEventListener('click', ()=>{
-    window.location.replace('https://dribbble.com/NikoDOla')
+    window.open('https://dribbble.com/NikoDOla')
     console.log('ej')
 })
 socialCode1.addEventListener('click', ()=>{
-    window.location.replace('https://dribbble.com/NikoDOla')
+    window.open('https://dribbble.com/NikoDOla')
     console.log('ej')
 })
 socialCode2.addEventListener('click', ()=>{
-    window.location.replace('https://www.behance.net/nikodola/appreciated')
+    window.open('https://www.behance.net/nikodola/appreciated')
     console.log('ej')
 })
 socialCode3.addEventListener('click', ()=>{
-    window.location.replace('https://www.instagram.com/niko_dola/?hl=en')
+    window.open('https://www.instagram.com/niko_dola/?hl=en')
     console.log('ej')
 })
 socialCode4.addEventListener('click', ()=>{
-    window.location.replace('https://www.linkedin.com/in/nikola-dolovski-b932b0ba/?originalSubdomain=mk')
+    window.open('https://www.linkedin.com/in/nikola-dolovski-b932b0ba/?originalSubdomain=mk')
     console.log('ej')
 })
 socialCode5.addEventListener('click', ()=>{
-    window.location.replace('https://www.youtube.com/@Niko_Dola')
+    window.open('https://www.youtube.com/@Niko_Dola')
     console.log('ej')
 })
 }
