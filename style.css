@@ -71,9 +71,7 @@ body{
 #contentCode3{
     visibility:visible;
 }
-#buttonCode2{
-    height: 14000px;
-}
+
 .button{
    
     transition: 1s ease;
@@ -109,14 +107,14 @@ body{
 }
 
 .content{
-    /* visibility: hidden; */
+    visibility: hidden;
     position: absolute;
     left: 50%;
     top: 50px;
     transform: translate(-50%);
     width: 80%;
     height: max-content;
-    /* opacity: 0; */
+    opacity: 0;
     transition: 1s ease-in;
     overflow: hidden;
 }

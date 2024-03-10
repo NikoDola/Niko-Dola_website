@@ -54,8 +54,8 @@ secretButtonCode2.addEventListener('click', ()=>{
         buttonCode2.style.height = '1400px'
         arrowCode2.style.transform = 'rotate(45deg)'
         toggleCode2 = true
-        // contentCode2.style.visibility = 'visible'
-        // contentCode2.style.opacity = '1'
+        contentCode2.style.visibility = 'visible'
+        contentCode2.style.opacity = '1'
         contentCode2.style.transition = '1s ease-out'
         
     }
@@ -63,8 +63,8 @@ secretButtonCode2.addEventListener('click', ()=>{
         buttonCode2.style.height = ''
         toggleCode2 = false
         arrowCode2.style.transform = ''
-        // contentCode2.style.visibility = ''
-        // contentCode2.style.opacity = '0'
+        contentCode2.style.visibility = ''
+        contentCode2.style.opacity = '0'
         contentCode2.style.transition = '0.5s'
     }
     
