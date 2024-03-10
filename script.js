@@ -18,12 +18,7 @@ const secretButtonCode2 = document.getElementById('secretButtonCode2')
 const secretButtonCode3 = document.getElementById('secretButtonCode3')
 
 const infoSet = new Set()
-setInterval(() => {
-    console.log(infoSet)
-    if (infoSet.length >= 2){
-        console.log ('raboti')
-    }
-}, 1000);
+
 // Button 1
 let toggleCode1 = false
 secretButtonCode1.addEventListener('click', ()=>{
@@ -157,7 +152,7 @@ function colorPicker(name, description, imagePath){
     textDiv.appendChild(bodyText)
     mainDiv.appendChild(imageDiv)
     mainDiv.append(textDiv)
-    picker.appendChild(mainDiv)
+    // picker.appendChild(mainDiv)
 
 }
 
@@ -172,3 +167,38 @@ colorPicker('Pinks', 'Knowledge','/assets/colors/Pinks.jpg')
 colorPicker('Purples','Knowledge', '/assets/colors/Purples.jpg')
 colorPicker('Greens', 'Knowledge','/assets/colors/Greens.jpg')
 colorPicker('Designer_choice', 'Knowledge','/assets/colors/Designer_choice.jpg')
+
+
+
+function socialClickable(){
+const socialCode1= document.getElementById('socialCode1')
+const socialCode2= document.getElementById('socialCode2')
+const socialCode3= document.getElementById('socialCode3')
+const socialCode4= document.getElementById('socialCode4')
+const socialCode5= document.getElementById('socialCode5')
+socialCode1.addEventListener('click', ()=>{
+    window.location.replace('https://dribbble.com/NikoDOla')
+    console.log('ej')
+})
+socialCode1.addEventListener('click', ()=>{
+    window.location.replace('https://dribbble.com/NikoDOla')
+    console.log('ej')
+})
+socialCode2.addEventListener('click', ()=>{
+    window.location.replace('https://www.behance.net/nikodola/appreciated')
+    console.log('ej')
+})
+socialCode3.addEventListener('click', ()=>{
+    window.location.replace('https://www.instagram.com/niko_dola/?hl=en')
+    console.log('ej')
+})
+socialCode4.addEventListener('click', ()=>{
+    window.location.replace('https://www.linkedin.com/in/nikola-dolovski-b932b0ba/?originalSubdomain=mk')
+    console.log('ej')
+})
+socialCode5.addEventListener('click', ()=>{
+    window.location.replace('https://www.youtube.com/@Niko_Dola')
+    console.log('ej')
+})
+}
+socialClickable()
