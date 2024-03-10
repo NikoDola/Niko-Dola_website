@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .imageDiv{
+            width: max-content;
+            gap: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #Check{
+            display: none;
+        }
+    </style>
+    <div class="imageDiv"></div>
+    <script>
+        const imageDiv = document.querySelector('.imageDiv') 
+
+       const colorSet = new Set()
+
+        setInterval(() => {
+        console.log(colorSet)   
+        console.log(colorSet.size) 
+        }, 1000);
+       
+        function picker(name, pathImage) {
+    const img = document.createElement('div');
+    const check = document.createElement('div');
+    check.style.width = '30px';
+    check.style.height = '30px';
+    check.style.background = 'black';
+    check.id = 'Check';
+    img.id = name;
+    img.style.width = '170px';
+    img.style.height = '170px';
+    img.style.backgroundImage = `url(${pathImage})`;
+    img.style.backgroundSize = 'cover';
+    img.appendChild(check);
+    imageDiv.appendChild(img);
+
+    let toggleCode1 = false;
+    img.addEventListener('click', () => {
+        if (!toggleCode1) {
+            toggleCode1 = true;
+            colorSet.add(name);
+        } else {
+            toggleCode1 = false;
+            colorSet.delete(name);
+        }
+        if (!colorSet.has(name) && colorSet.size == 2 ) {
+            img.style.opacity = '0.5'
+        }
+    });
+}
+        
+
+
+
+    </script>
+</body>
+</html>`
