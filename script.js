@@ -119,6 +119,7 @@ function colorPicker(name, description, imagePath){
     imageDiv.style.height = '170px'
     imageDiv.style.width = '170px'
     imageDiv.style.backgroundImage = `url('${imagePath}')`
+    imageDiv.style.backgroundSize = 'cover'
     bodyText.style.marginTop = '-15px'
     bodyText.style.width = '170px'
 
