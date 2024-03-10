@@ -48,27 +48,27 @@ secretButtonCode1.addEventListener('click', ()=>{
 })
 
 // Button 2
-let toggleCode2 = false
-secretButtonCode2.addEventListener('click', ()=>{
-    if (!toggleCode2){
-        buttonCode2.style.height = '1400px'
-        arrowCode2.style.transform = 'rotate(45deg)'
-        toggleCode2 = true
-        contentCode2.style.visibility = 'visible'
-        contentCode2.style.opacity = '1'
-        contentCode2.style.transition = '1s ease-out'
+// let toggleCode2 = false
+// secretButtonCode2.addEventListener('click', ()=>{
+//     if (!toggleCode2){
+//         buttonCode2.style.height = '1400px'
+//         arrowCode2.style.transform = 'rotate(45deg)'
+//         toggleCode2 = true
+//         contentCode2.style.visibility = 'visible'
+//         contentCode2.style.opacity = '1'
+//         contentCode2.style.transition = '1s ease-out'
         
-    }
-    else{
-        buttonCode2.style.height = ''
-        toggleCode2 = false
-        arrowCode2.style.transform = ''
-        contentCode2.style.visibility = ''
-        contentCode2.style.opacity = '0'
-        contentCode2.style.transition = '0.5s'
-    }
+//     }
+//     else{
+//         buttonCode2.style.height = ''
+//         toggleCode2 = false
+//         arrowCode2.style.transform = ''
+//         contentCode2.style.visibility = ''
+//         contentCode2.style.opacity = '0'
+//         contentCode2.style.transition = '0.5s'
+//     }
     
-})
+// })
 
 
 // Button 3
@@ -81,16 +81,19 @@ secretButtonCode3.addEventListener('click', ()=>{
         contentCode3.style.visibility = 'visible'
         contentCode3.style.opacity = '1'
         contentCode3.style.transition = '1s ease-out'
+}
+        else{
+            buttonCode3.style.height = ''
+            toggleCode3 = false
+            arrowCode3.style.transform = ''
+            contentCode3.style.visibility = ''
+            contentCode3.style.opacity = '0'
+            contentCode3.style.transition = '0.5s'
+        }
 
-        buttonCode3.style.height = ''
-        toggleCode3 = false
-        arrowCode3.style.transform = ''
-        contentCode3.style.visibility = ''
-        contentCode3.style.opacity = '0'
-        contentCode3.style.transition = '0.5s'
     }
     
-})
+)
 
 
 function colorPicker(name, description, imagePath){

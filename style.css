@@ -1,15 +1,53 @@
+:root{
+    --main-color: #87CFD3;
+    --background-color:#0E1011;
+    --light-black-color:#1E2223;
+    --text-color:#E4E8E9;
+}
 body{
-    display: flex;
-    justify-content: center;
-    background: black;
     padding: 0;
     margin: 0;
+    background: var(--background-color);
     overflow-x: hidden;
+    
 }
 
 
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+}
+
+
+h2{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+}
+
+h3{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+}
+
+
+h4{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 20px;
+    color: var(--text-color);
+
+}
+
 .logo{
-    margin-top: 100px;
+    height: 180px;
+    width: 180px;
+    background-image: url('/assets/icons/logo.png');
+    background-size: cover;
+    
 }
 
 #imgCode1 {
@@ -32,10 +70,23 @@ body{
     padding-right: 100px;
     padding-left: 100px;
     overflow: hidden;
-    
-    
 }
 
+.social_tabs{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+
+
+.social_icons{
+    position: absolute;
+    height: 50px;
+    left: 30px;
+    top: 10px;
+
+}
 
 
 .button_section{
@@ -46,15 +97,15 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    gap: 10px;
-    outline: solid red 3px;
-    
+    gap: 10px; 
+    cursor: pointer;
 }
 .button{
     position: relative;
     background-color: white;
     width: 100%;
-    height: 50px;
+    height: 70px;
+    border-radius: 1rem;
 }
 
 .social_media_icons{
@@ -73,10 +124,13 @@ body{
 }
 
 .button{
-   
-    transition: 1s ease;
+    background-color: var(--light-black-color);
+    transition: outline 0.3s, height 1s;
 }
 
+.button:hover{
+    outline: solid var(--main-color);
+}
 .secret_button{
     display: flex;
     position: absolute;
@@ -101,9 +155,8 @@ body{
     left: 50%;
     transform: translate(-50%);
     padding: 0;
-    top: 10px;
+    top: 20px;
     margin: 0;
-    color: black;
 }
 
 .content{
@@ -148,6 +201,31 @@ box-sizing: border-box;
 padding: 10px;
 width: 100%;
 }
+
+#socialCode1{
+    background-color: #ea4c89;
+
+}
+#socialCode2{
+    background-color: #053EFF;
+}
+
+#socialCode3{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #8b27dc 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(425deg, #df7a0f 0%,#e6683c 25%,#8b27dc 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #e86411 0%,#e6683c 25%,#8b27dc 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#socialCode4{
+    background-color:#0e76a8;
+}
+#socialCode5{
+    background-color:red;
+}
+
+
 
 @media (max-width: 768px) {
 
