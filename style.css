@@ -43,8 +43,8 @@ p {
 }
 
 .logo{
-    height: 180px;
-    width: 180px;
+    height: 150px;
+    width: 150px;
     background-image: url('/assets/icons/logo.png');
     background-size: cover;
     
@@ -52,18 +52,24 @@ p {
 
 #imgCode1 {
     height: 500px;
-    background-image: url('assets/demoImage.jpg');
+    background-image: url('assets/images_of-me/picture_me1.jpg');
+    background-size: cover;
+
+}
+
+#imgCode2 {
+    height: 500px;
+    background-image: url('assets/images_of-me/ohlela_logo-design.jpg');
     background-size: cover;
     background-position: center;
 }
-
 
 .main{
     width: 100vw;
     position: absolute;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
@@ -142,11 +148,12 @@ p {
 
 .arrow{
     right: 30px;
+    height: 15px;
+    width: 15px;
     position: absolute;
-    height: 20px;
-    width: 20px;
-    background-color: red;
-    top: 10px;
+    background-image: url('/assets/general/arrow.png');
+    background-size: cover;
+    top: 15px;
     transition: 1s ease-in-out;
 }
 
@@ -252,5 +259,10 @@ width: 100%;
     }
     .main_buttom_text{
         top: 12px;    
+    }
+
+    .logo{
+        height: 130px;
+        width: 130px;
     }
 }

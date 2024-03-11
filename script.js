@@ -24,7 +24,7 @@ let toggleCode1 = false
 secretButtonCode1.addEventListener('click', ()=>{
     if (!toggleCode1){
         buttonCode1.style.height = '1400px'
-        arrowCode1.style.transform = 'rotate(45deg)'
+        arrowCode1.style.transform = 'rotate(90deg)'
         toggleCode1 = true
         contentCode1.style.visibility = 'visible'
         contentCode1.style.opacity = '1'
@@ -70,8 +70,8 @@ secretButtonCode1.addEventListener('click', ()=>{
 let toggleCode3 = false
 secretButtonCode3.addEventListener('click', ()=>{
     if (!toggleCode3){
-        buttonCode3.style.height = '1400px'
-        arrowCode3.style.transform = 'rotate(45deg)'
+        buttonCode3.style.height = '300px'
+        arrowCode3.style.transform = 'rotate(90deg)'
         toggleCode3 = true
         contentCode3.style.visibility = 'visible'
         contentCode3.style.opacity = '1'
