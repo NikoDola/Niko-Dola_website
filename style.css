@@ -75,6 +75,7 @@ p {
     box-sizing: border-box;
     padding-right: 100px;
     padding-left: 100px;
+    margin-top: 30px;
     overflow: hidden;
 }
 
