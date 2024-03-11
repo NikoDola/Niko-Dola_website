@@ -1,0 +1,269 @@
+:root{
+    --main-color: #87CFD3;
+    --background-color:#0E1011;
+    --light-black-color:#1E2223;
+    --text-color:#E4E8E9;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--background-color);
+    overflow-x: hidden;
+    
+}
+
+
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+}
+
+
+h2{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+}
+
+h3{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+}
+
+
+h4{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 20px;
+    color: var(--text-color);
+
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+    background-image: url('/assets/icons/logo.png');
+    background-size: cover;
+    
+}
+
+#imgCode1 {
+    height: 500px;
+    background-image: url('assets/images_of-me/picture_me1.jpg');
+    background-size: cover;
+
+}
+
+#imgCode2 {
+    height: 500px;
+    background-image: url('assets/images_of-me/ohlela_logo-design.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.social_tabs{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+
+
+.social_icons{
+    position: absolute;
+    height: 50px;
+    left: 30px;
+    top: 10px;
+
+}
+
+
+.button_section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px; 
+    cursor: pointer;
+}
+.button{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    border-radius: 1rem;
+}
+
+.social_media_icons{
+    display: flex;
+    gap: 30px;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 100%;
+}
+#contentCode3{
+    visibility:visible;
+}
+
+.button{
+    background-color: var(--light-black-color);
+    transition: outline 0.3s, height 1s;
+}
+
+.button:hover{
+    outline: solid var(--main-color);
+}
+.secret_button{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.arrow{
+    right: 30px;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    background-image: url('/assets/general/arrow.png');
+    background-size: cover;
+    top: 15px;
+    transition: 1s ease-in-out;
+}
+
+.main_buttom_text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0;
+    top: 20px;
+    margin: 0;
+}
+
+.content{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    width: 80%;
+    height: max-content;
+    opacity: 0;
+    transition: 1s ease-in;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+}
+
+#redImage{
+    height: 170px;
+    width: 170px;
+    background-color: red;
+}
+
+#colorPicker{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+    grid-gap: 10px; /* Gap between grid items */
+    grid-auto-flow: row; /* Arrange grid items in rows */
+}
+
+textarea{
+box-sizing: border-box;
+padding: 10px;
+width: 100%;
+}
+
+#socialCode1{
+    background-color: #ea4c89;
+
+}
+#socialCode2{
+    background-color: #053EFF;
+}
+
+#socialCode3{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #8b27dc 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(425deg, #df7a0f 0%,#e6683c 25%,#8b27dc 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #e86411 0%,#e6683c 25%,#8b27dc 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#socialCode4{
+    background-color:#0e76a8;
+}
+#socialCode5{
+    background-color:red;
+}
+
+
+
+@media (max-width: 768px) {
+
+    
+#colorPicker{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Three columns with equal width */
+        grid-gap: 10px; /* Gap between grid items */
+       
+    
+    }
+
+    .main{
+        padding: 5%;
+        overflow-x: hidden;
+    }
+    .button{
+        width: 100%;
+        height: 50px;
+    }
+    .social_icons{
+        height: 40px;
+        top: 5px;
+    }
+    .main_buttom_text{
+        top: 12px;    
+    }
+
+    .logo{
+        height: 130px;
+        width: 130px;
+    }
+}
