@@ -39,14 +39,14 @@ function colorPicker(name, description, imagePath){
             checkMarkBg.style.display='block'
             infoSet.add(name)
             toggleCode5 = true
-            imageDiv.style.border = 'solid var(--main-color)'
+            imageDiv.style.outline = 'solid var(--main-color)'
         }
 
         else if (toggleCode5){
             checkMarkBg.style.display='none'
             infoSet.delete(name)
             toggleCode5 = false
-            imageDiv.style.border=''
+            imageDiv.style.outline=''
         }
 
         if (infoSet.size === 4 ){

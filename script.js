@@ -24,7 +24,7 @@ const infoSet = new Set()
 let toggleCode1 = false
 secretButtonCode1.addEventListener('click', ()=>{
     if (!toggleCode1){
-        buttonCode1.style.height = '1400px'
+        buttonCode1.style.height = '2000px'
         arrowCode1.style.transform = 'rotate(90deg)'
         toggleCode1 = true
         contentCode1.style.visibility = 'visible'
