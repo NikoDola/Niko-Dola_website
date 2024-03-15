@@ -305,6 +305,14 @@ width: 100%;
     
     }
 
+    .main_buttom_text{
+        margin-top: -3px;
+    }
+
+    .arrow{
+        top: 18px;
+    }
+
     .main{
         padding: 3%;
         overflow-x: hidden;
