@@ -4,21 +4,20 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = process.env.PORT || 5501;
+const port = process.env.PORT || 3200;
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve the HTML form
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/test.html');
 });
 
 // Handle form submission
 app.post('/send-email', (req, res) => {
-    const { companyName, tagline, has, hasNot, clientName, clientEmail } = req.body;
+    const { email } = req.body;
 
-    // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
         service: 'Gmail', // Use your email service provider
         auth: {
@@ -29,11 +28,13 @@ app.post('/send-email', (req, res) => {
 
     // Email content
     const mailOptions = {
-        from: 'nikodola@gmail.com',
-        to: email,
+        from: email,
+        to: 'nikodola@gmail.com', // Use the email from the form
         subject: 'Thank you for contacting us!',
-        text: `Hi ${companyName} ${tagline}, ${has}, ${hasNot} ${clientName}, ${clientEmail} , ${email}\n\nWe received your message.`
+        text: `Hi ${email}, \nWe received your order.`,
     };
+
+    
 
     // Send the email
     transporter.sendMail(mailOptions, (error, info) => {

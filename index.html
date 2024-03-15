@@ -55,25 +55,26 @@
                             <h2 class="titHeader">Background Information</h2>
                          </div>
                         
-                         <div class="formSection">
+                         <div id="nameForm"class="formSection">
                             <p>What name do you want in your logo?</p>
-                            <input type="text" name="Company" id="company" autocomplete="off">
+                            <input type="text" name="name" id="name" autocomplete="off">
                         </div>
 
-                        <div class="formSection">
+                        <div id="taglineForm" class="formSection">
                             <p>Do you have a slogan you want incorporated in your logo?</p>
                             <input type="text" name="tagline?" id="tagline" autocomplete="false">
                         </div>
 
-                        <div class="formSection">
-                            <p>Is there anything specific element you like to use in the</p>
+                        <div id="hasForm" class="formSection">
+                            <p>Is there anything specific element you like to use in the logo</p>
                             <textarea autocomplete="false" id="has"></textarea>
                         </div>
 
-                        <div class="formSection">
+                        <div class="hasNotForm">
                             <p>Is there anything specific you would like to avoid</p>
                             <textarea autocomplete="false" id="hasNot"></textarea>
                         </div>
+
                     </div>
                 </div>
 
@@ -84,13 +85,14 @@
                         <p class="titleBody">Pick up to four colors you'd like your designers to explore.</p>
                      </div>
                     <div class="colorPicker" id="colorPicker">
+                        
                     </div>
                    
                     <div id="inspirationPicker">
 
                     </div>
 
-                    <button>Submit</button>
+                    <button style="width:300px" >Submit</button>
                 </form>
         </div>
 
@@ -162,5 +164,6 @@
 
 <script src="script.js"> </script>
 <script src="components/colorPicker/colorPicker.js"></script>
+
 </body>
 </html>
