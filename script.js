@@ -1,6 +1,3 @@
-
-
-
 const buttonCode1 = document.getElementById('buttonCode1')
 const buttonCode2 = document.getElementById('buttonCode2')
 const buttonCode3 = document.getElementById('buttonCode3')
@@ -43,29 +40,33 @@ secretButtonCode1.addEventListener('click', ()=>{
     
 })
 
-// Button 2
-let toggleCode2 = false
-secretButtonCode2.addEventListener('click', ()=>{
-    if (!toggleCode2){
+const contentHeight = contentCode2.scrollHeight;
 
-        buttonCode2.style.height = '2000px'
-        arrowCode2.style.transform = 'rotate(90deg)'
-        toggleCode2 = true
-        contentCode2.style.visibility = 'visible'
-        contentCode2.style.opacity = '1'
-        contentCode2.style.transition = '1s ease-out'
+// Button 2
+let toggleCode2 = false;
+
+secretButtonCode2.addEventListener('click', () => {
+    if (!toggleCode2) {
+        // Get the height of the content inside contentCode2
+        const contentHeight = contentCode2.scrollHeight;
         
+        // Set the height of buttonCode2 to the height of the content
+        buttonCode2.style.height = contentHeight + 100 + 'px';
+        
+        arrowCode2.style.transform = 'rotate(90deg)';
+        toggleCode2 = true;
+        contentCode2.style.visibility = 'visible';
+        contentCode2.style.opacity = '1';
+        contentCode2.style.transition = '1s ease-out';
+    } else {
+        buttonCode2.style.height = ''; // Reset height to default (auto)
+        toggleCode2 = false;
+        arrowCode2.style.transform = '';
+        contentCode2.style.opacity = '0';
+        contentCode2.style.transition = '0.5s';
     }
-    else{
-        buttonCode2.style.height = ''
-        toggleCode2 = false
-        arrowCode2.style.transform = ''
-    
-        contentCode2.style.opacity = '0'
-        contentCode2.style.transition = '0.5s'
-    }
-    
-})
+});
+
 
 
 // Button 3
@@ -129,3 +130,4 @@ socialCode5.addEventListener('click', ()=>{
 }
 socialClickable()
 
+console.log(contentCode2.scrollHeight )
