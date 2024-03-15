@@ -67,12 +67,12 @@ function colorPicker(name, description, imagePath){
 
 }
 
-colorPicker('Reds', 'Knowledge', '/assets/colors/reds.jpg')
-colorPicker('Blues','Knowledge', '/assets/colors/blues.jpg')
-colorPicker('Aquuas','Knowledge', '/assets/colors/Aquas.jpg')
+colorPicker('Reds', 'Energy, action, passion, and love', '/assets/colors/reds.jpg')
+colorPicker('Blues','Knowledge, trust, calm, and honesty', '/assets/colors/blues.jpg')
+colorPicker('Aquuas','Empathy, Compassion, clarity, and precision', '/assets/colors/Aquas.jpg')
 colorPicker('Browns','Knowledge', '/assets/colors/browns.jpg')
-colorPicker('Oranges','Knowledge', '/assets/colors/oranges.jpg')
-colorPicker('Pinks', 'Knowledge','/assets/colors/pinks.jpg')
+colorPicker('Oranges','Creativity, advneture and happiness', '/assets/colors/oranges.jpg')
+colorPicker('Pinks', 'Intimacy, love, calm and nurture','/assets/colors/pinks.jpg')
 colorPicker('Purples','Knowledge', '/assets/colors/purples.jpg')
 colorPicker('Greens', 'Knowledge','/assets/colors/greens.jpg')
 colorPicker('Designer_choice', 'Knowledge','/assets/colors/designer_choice.jpg')
