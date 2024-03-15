@@ -178,7 +178,7 @@ p {
     left: 50%;
     top: 50px;
     transform: translate(-50%);
-    width: 80%;
+    width: 90%;
     height: max-content;
     opacity: 0;
     transition: 1s ease-in;
@@ -283,7 +283,10 @@ width: 100%;
         font-size: calc(1rem + 2vw);
       }
       input{
-        font-size: 40px;
+        font-size: 16px;
+      }
+      textarea{
+        font-size: 24px;
       }
 #colorPicker{
         display: grid;
@@ -294,7 +297,7 @@ width: 100%;
     }
 
     .main{
-        padding: 5%;
+        padding: 3%;
         overflow-x: hidden;
     }
     .button{
