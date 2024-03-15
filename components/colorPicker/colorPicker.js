@@ -20,7 +20,7 @@ function colorPicker(name, description, imagePath){
     checkMark.style.left = '10px'
     checkMarkBg.style.width = '50px'
     checkMarkBg.style.height = '50px'
-    checkMarkBg.style.background = 'black'
+    checkMarkBg.style.background = 'var(--background-color)'
     checkMarkBg.style.position = 'relative'
     checkMarkBg.style.display = 'none'
 
@@ -39,14 +39,14 @@ function colorPicker(name, description, imagePath){
             checkMarkBg.style.display='block'
             infoSet.add(name)
             toggleCode5 = true
-            imageDiv.style.outline = 'solid var(--main-color)'
+            imageDiv.style.border = 'solid var(--main-color)'
         }
 
         else if (toggleCode5){
             checkMarkBg.style.display='none'
             infoSet.delete(name)
             toggleCode5 = false
-            imageDiv.style.outline=''
+            imageDiv.style.border=''
         }
 
         if (infoSet.size === 4 ){
