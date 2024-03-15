@@ -173,17 +173,23 @@ p {
 }
 
 .content{
-    visibility: hidden;
+    
     position: absolute;
     left: 50%;
     top: 50px;
     transform: translate(-50%);
-    width: 90%;
+    width: 88%;
     height: max-content;
     opacity: 0;
     transition: 1s ease-in;
     overflow: hidden;
 }
+
+.content.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
 
 input, textarea{
     width: 100%;
@@ -256,6 +262,7 @@ width: 100%;
 
 #tittleMain{
     text-align: center;
+
 }
 .tittleMain{
     display: flex;
@@ -263,6 +270,7 @@ width: 100%;
     justify-content: space-between;
     margin-top: 30px;
 }
+
 
 .titleBody{
     margin-top: -10px;
@@ -283,10 +291,10 @@ width: 100%;
         font-size: calc(1rem + 2vw);
       }
       input{
-        font-size: 16px;
+        font-size: 24px;
       }
       textarea{
-        font-size: 24px;
+        font-size: 16px;
       }
 #colorPicker{
         display: grid;
