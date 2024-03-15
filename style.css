@@ -276,7 +276,8 @@ width: 100%;
 
 
 .titleBody{
-    margin-top: -10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .titleHeader{
