@@ -39,18 +39,47 @@
                 <h1 class="main_buttom_text" id="mainButtonTextCode2">Get your logo</h1>
                 <div class="arrow" id="arrowCode2"></div>
             </div>
-            <form action="/send-email" method="post" class="content" id="contentCode2">
-                    <h1>Design Brief</h1>
-                    <h3>Company Name</h3>
-                    <input type="text" name="Company" id="company">
-                    <h3>Do you have a tagline?</h3>
-                    <input type="text" name="tagline?" id="tagline">
-                    <h3>Is there anything specific element you like to use in the</h3>
-                    <textarea id="has"></textarea>
-                    <h3>Is there anything specific you would like to avoid</h3>
-                    <textarea id="hasNot"></textarea>
+            <form autocomplete="off" action="/send-email" method="post" class="content" id="contentCode2">
 
-                    <h2>Color Picker</h2>
+                    <!-- Logo design brief -->
+                <div class="Logo design brief">
+                    
+
+                    <div class="tittleMain" id="tittleMain">
+                        <p class="titHeader">Fill out the  </p>
+                        <h1 class='titleBody'>Logo Design Brief</h1>
+                     </div>
+                     <hr>
+                    <div class="backgroundInformation">
+                        <div class="tittleMain">
+                            <h2 class="titHeader">Background Information</h2>
+                         </div>
+                        
+                         <div class="formSection">
+                            <h3>What name do you want in your logo?</h3>
+                            <input type="text" name="Company" id="company" autocomplete="off">
+                        </div>
+
+                        <div class="formSection">
+                            <h3>Do you have a slogan you want incorporated in your logo?</h3>
+                            <input type="text" name="tagline?" id="tagline" autocomplete="false">
+                        </div>
+
+                        <div class="formSection">
+                            <h3>Is there anything specific element you like to use in the</h3>
+                            <textarea autocomplete="false" id="has"></textarea>
+                        </div>
+
+                        <div class="formSection">
+                            <h3>Is there anything specific you would like to avoid</h3>
+                            <textarea autocomplete="false" id="hasNot"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                    <!-- Color Picker -->
+                    <h1>Color Picker</h1>
                     <div class="colorPicker" id="colorPicker">
                     </div>
                     <div id="inspirationPicker"></div>
@@ -125,6 +154,7 @@
     </div>
 
 </section>
+
 <script src="script.js"> </script>
 </body>
 </html>

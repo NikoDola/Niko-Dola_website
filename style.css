@@ -12,10 +12,14 @@ body{
     
 }
 
+hr{
 
+    border: solid var(--background-color) 1px;
+}
 h1{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-color);
+    font-size: 30px;
 }
 
 
@@ -158,6 +162,7 @@ p {
     transition: 1s ease-in-out;
 }
 
+
 .main_buttom_text{
     position: absolute;
     left: 50%;
@@ -180,10 +185,20 @@ p {
     overflow: hidden;
 }
 
-input{
+input, textarea{
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+   
+}
+
+input:focus, textarea:focus{
+    border: solid var(--main-color) 1px;
+    outline: solid var(--main-color) 1px;
+    color: lightgrey;
 }
 
 textarea{
@@ -195,6 +210,10 @@ textarea{
     height: 170px;
     width: 170px;
     background-color: red;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: red; /* Change to your desired text color */
 }
 
 #colorPicker{
@@ -218,6 +237,8 @@ width: 100%;
     background-color: #053EFF;
 }
 
+
+
 #socialCode3{
     background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #8b27dc 50%, #cc2366 75%, #bc1888 100%); 
@@ -233,11 +254,34 @@ width: 100%;
     background-color:red;
 }
 
+#tittleMain{
+    text-align: center;
+}
+.tittleMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 
+.titleBody{
+    margin-top: -10px;
+}
+
+.titleHeader{
+    margin: 0;
+}
+
+.formSection{
+    margin-bottom: 30px;
+}
 
 @media (max-width: 768px) {
 
-    
+    h1, h2, h3, h4, p {
+        font-size: calc(1rem + 2vw);
+      }
+
 #colorPicker{
         display: grid;
         grid-template-columns: 1fr 1fr; /* Three columns with equal width */

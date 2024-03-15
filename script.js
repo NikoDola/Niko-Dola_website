@@ -47,7 +47,7 @@ secretButtonCode1.addEventListener('click', ()=>{
 let toggleCode2 = false
 secretButtonCode2.addEventListener('click', ()=>{
     if (!toggleCode2){
-        buttonCode2.style.height = '1400px'
+        buttonCode2.style.height = '2000px'
         arrowCode2.style.transform = 'rotate(45deg)'
         toggleCode2 = true
         contentCode2.style.visibility = 'visible'
@@ -95,7 +95,7 @@ secretButtonCode3.addEventListener('click', ()=>{
 function colorPicker(name, description, imagePath){
     const picker = document.getElementById('colorPicker')
     const checkMark = document.createElement('img')
-
+    
     const mainDiv = document.createElement('div')
     const imageDiv = document.createElement('div')
     const textDiv= document.createElement('div')
@@ -192,3 +192,4 @@ socialCode5.addEventListener('click', ()=>{
 })
 }
 socialClickable()
+
