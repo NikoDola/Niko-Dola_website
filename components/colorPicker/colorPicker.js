@@ -66,11 +66,11 @@ function colorPicker(name, description, imagePath){
 }
 
 colorPicker('Reds', 'Knowledge', '/assets/colors/reds.jpg')
-colorPicker('Blues','Knowledge', '/assets/colors/Blues.jpg')
+colorPicker('Blues','Knowledge', '/assets/colors/blues.jpg')
 colorPicker('Aquuas','Knowledge', '/assets/colors/Aquas.jpg')
-colorPicker('Browns','Knowledge', '/assets/colors/Browns.jpg')
-colorPicker('Oranges','Knowledge', '/assets/colors/Oranges.jpg')
-colorPicker('Pinks', 'Knowledge','/assets/colors/Pinks.jpg')
-colorPicker('Purples','Knowledge', '/assets/colors/Purples.jpg')
-colorPicker('Greens', 'Knowledge','/assets/colors/Greens.jpg')
-colorPicker('Designer_choice', 'Knowledge','/assets/colors/Designer_choice.jpg')
+colorPicker('Browns','Knowledge', '/assets/colors/browns.jpg')
+colorPicker('Oranges','Knowledge', '/assets/colors/oranges.jpg')
+colorPicker('Pinks', 'Knowledge','/assets/colors/pinks.jpg')
+colorPicker('Purples','Knowledge', '/assets/colors/purples.jpg')
+colorPicker('Greens', 'Knowledge','/assets/colors/greens.jpg')
+colorPicker('Designer_choice', 'Knowledge','/assets/colors/designer_choice.jpg')
