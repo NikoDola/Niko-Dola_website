@@ -277,11 +277,14 @@ width: 100%;
 }
 
 @media (max-width: 768px) {
+    
 
     h1, h2, h3, h4, p {
         font-size: calc(1rem + 2vw);
       }
-
+      input{
+        font-size: 40px;
+      }
 #colorPicker{
         display: grid;
         grid-template-columns: 1fr 1fr; /* Three columns with equal width */
