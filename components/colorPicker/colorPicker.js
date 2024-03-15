@@ -25,12 +25,12 @@ function colorPicker(name, description, imagePath){
     checkMarkBg.style.display = 'none'
 
     imageDiv.style.position ='relative'
-    imageDiv.style.height = '170px'
-    imageDiv.style.width = '170px'
+    imageDiv.style.height = '165px'
+    imageDiv.style.width = '165px'
     imageDiv.style.backgroundImage = `url('${imagePath}')`
     imageDiv.style.backgroundSize = 'cover'
     bodyText.style.marginTop = '-15px'
-    bodyText.style.width = '170px'
+    bodyText.style.width = '165px'
 
     let toggleCode5 = false
 
@@ -39,16 +39,18 @@ function colorPicker(name, description, imagePath){
             checkMarkBg.style.display='block'
             infoSet.add(name)
             toggleCode5 = true
+            imageDiv.style.outline = 'solid var(--main-color)'
         }
 
         else if (toggleCode5){
             checkMarkBg.style.display='none'
             infoSet.delete(name)
             toggleCode5 = false
+            imageDiv.style.outline=''
         }
 
         if (infoSet.size === 4 ){
-            picker.style.opacity = '0.7'
+            picker.style.opacity = '0.5'
         }
         else{
            picker.style.opacity = '1' 
