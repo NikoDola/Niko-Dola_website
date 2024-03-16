@@ -13,10 +13,13 @@ const contentCode3 = document.getElementById('contentCode3')
 const secretButtonCode1 = document.getElementById('secretButtonCode1')
 const secretButtonCode2 = document.getElementById('secretButtonCode2')
 const secretButtonCode3 = document.getElementById('secretButtonCode3')
-
+const colorInfo = document.getElementById('colorInfo')
 const infoSet = new Set()
 
+ colorInfo.textContent = infoSet
 // Button 1
+
+
 
 let toggleCode1 = false
 secretButtonCode1.addEventListener('click', ()=>{
@@ -51,7 +54,7 @@ secretButtonCode2.addEventListener('click', () => {
         const contentHeight = contentCode2.scrollHeight;
         
         // Set the height of buttonCode2 to the height of the content
-        buttonCode2.style.height = contentHeight + 100 + 'px';
+        buttonCode2.style.height = contentHeight + 50 + 'px';
         
         arrowCode2.style.transform = 'rotate(90deg)';
         toggleCode2 = true;

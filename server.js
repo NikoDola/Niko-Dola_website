@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 // Handle form submission
 app.post('/send-email', (req, res) => {
-    const { name, tagline, has, hasNot, } = req.body;
+    const { name, tagline, has, hasNot, colorInfo } = req.body;
 
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
@@ -32,7 +32,7 @@ app.post('/send-email', (req, res) => {
         from: 'nikodola@gmail.com',
         to: 'nikodola@gmail.com', // Use the email from the form
         subject: 'Thank you for contacting us!',
-        text: `Company name ${name}, tagline ${tagline}, should have: ${has}, should not have ${hasNot}`,
+        text: `Company name ${name}, tagline ${tagline}, should have: ${has}, should not have ${hasNot}, colors${colorInfo}`,
     };
 
     // Send the email

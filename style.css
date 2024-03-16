@@ -200,14 +200,14 @@ input, textarea{
     padding: 10px;
     background-color: var(--text-color);
     border: none;
-    color: white;
+    color: black;
    
 }
 
 input:focus, textarea:focus{
     border: solid var(--main-color) 1px;
     outline: solid var(--main-color) 1px;
-    color: lightgrey;
+    color: var(--light-black-color);
 }
 
 textarea{
@@ -282,6 +282,10 @@ width: 100%;
 
 .titleHeader{
     margin: 0;
+}
+
+#colorInfo{
+    display: none;
 }
 
 .formSection{

@@ -1,5 +1,6 @@
 
 
+
 function colorPicker(name, description, imagePath){
     const picker = document.getElementById('colorPicker')
 
@@ -39,14 +40,14 @@ function colorPicker(name, description, imagePath){
             checkMarkBg.style.display='block'
             infoSet.add(name)
             toggleCode5 = true
-            imageDiv.style.outline = 'solid var(--main-color)'
+            imageDiv.style = '2px solid var(--main-color)'
         }
 
         else if (toggleCode5){
             checkMarkBg.style.display='none'
             infoSet.delete(name)
             toggleCode5 = false
-            imageDiv.style.outline=''
+            imageDiv.style.border=''
         }
 
         if (infoSet.size === 4 ){
