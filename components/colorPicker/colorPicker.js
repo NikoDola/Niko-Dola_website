@@ -36,7 +36,7 @@ function colorPicker(name, description, imagePath){
     imageDiv.addEventListener('click', function(){
         if (!toggleCode5 && colorSet.size <4){
             checkMarkBg.style.display='block'
-            colorSet.add(name)
+            colorSet.add(`${name}`)
             toggleCode5 = true
             imageDiv.style.border = 'solid var(--main-color)'
         }
@@ -89,6 +89,8 @@ function imgPicker(name, description, imagePath){
     const input = document.createElement('textarea')
     input.id = 'inspirationTextarea'
     input.placeholder = 'Let us know, why you like this design.'
+    
+    
 
     input.className = 'imgInput'
     const mainDiv = document.createElement('div')
@@ -117,8 +119,9 @@ function imgPicker(name, description, imagePath){
 
     imageDiv.addEventListener('click', function(){
         if (!toggleCode5 && inspirationSet.size <4){
+           
             checkMarkBg.style.display='block'
-            inspirationSet.add(name)
+            inspirationSet.add(`${name} ${input.value}`)
             toggleCode5 = true
             imageDiv.style.border = 'solid var(--main-color)'
             input.style.display = 'block'

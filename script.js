@@ -67,7 +67,7 @@ secretButtonCode2.addEventListener('click', () => {
         const contentHeight = contentCode2.scrollHeight;
         
         // Set the height of buttonCode2 to the height of the content
-        buttonCode2.style.height = contentHeight + 50 + 'px';
+        buttonCode2.style.height = contentHeight + 100 + 'px';
         
         arrowCode2.style.transform = 'rotate(90deg)';
         toggleCode2 = true;
