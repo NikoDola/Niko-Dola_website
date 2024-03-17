@@ -14,9 +14,22 @@ const secretButtonCode1 = document.getElementById('secretButtonCode1')
 const secretButtonCode2 = document.getElementById('secretButtonCode2')
 const secretButtonCode3 = document.getElementById('secretButtonCode3')
 const colorInfo = document.getElementById('colorInfo')
-const infoSet = new Set()
 
- colorInfo.textContent = infoSet
+const formSet = new Set()
+const colorSet = new Set()
+const inspirationSet = new Set()
+
+const logoInfo = {
+    form: formSet,
+    color: colorSet,
+    inspiration: inspirationSet
+}
+
+setInterval(() => {
+    console.log(logoInfo)
+}, 1000);
+
+const colorData = colorInfo.textContent = colorSet
 // Button 1
 
 
