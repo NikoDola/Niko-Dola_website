@@ -37,6 +37,7 @@ const colorData = colorInfo.textContent = colorSet
 let toggleCode1 = false
 secretButtonCode1.addEventListener('click', ()=>{
     if (!toggleCode1){
+        contentCode1.style.display = 'block'
         buttonCode1.style.height = '2000px'
         arrowCode1.style.transform = 'rotate(90deg)'
         toggleCode1 = true
@@ -46,11 +47,13 @@ secretButtonCode1.addEventListener('click', ()=>{
         
     }
     else{
+        
         buttonCode1.style.height = ''
         toggleCode1 = false
         arrowCode1.style.transform = ''
+        contentCode1.style.display = ''
         contentCode1.style.visibility = ''
-        contentCode1.style.opacity = '0'
+        contentCode1.style.opacity = ''
         contentCode1.style.transition = '0.5s'
     }
     
@@ -63,12 +66,9 @@ let toggleCode2 = false;
 
 secretButtonCode2.addEventListener('click', () => {
     if (!toggleCode2) {
-        // Get the height of the content inside contentCode2
+        contentCode2.style.display = 'block';
         const contentHeight = contentCode2.scrollHeight;
-        
-        // Set the height of buttonCode2 to the height of the content
         buttonCode2.style.height = contentHeight + 100 + 'px';
-        
         arrowCode2.style.transform = 'rotate(90deg)';
         toggleCode2 = true;
         contentCode2.style.visibility = 'visible';
@@ -78,6 +78,8 @@ secretButtonCode2.addEventListener('click', () => {
         buttonCode2.style.height = ''; // Reset height to default (auto)
         toggleCode2 = false;
         arrowCode2.style.transform = '';
+        contentCode2.style.display = '';
+        contentCode2.style.visibility = '';
         contentCode2.style.opacity = '0';
         contentCode2.style.transition = '0.5s';
     }
@@ -113,37 +115,3 @@ secretButtonCode3.addEventListener('click', ()=>{
 
 
 
-function socialClickable(){
-const socialCode1= document.getElementById('socialCode1')
-const socialCode2= document.getElementById('socialCode2')
-const socialCode3= document.getElementById('socialCode3')
-const socialCode4= document.getElementById('socialCode4')
-const socialCode5= document.getElementById('socialCode5')
-socialCode1.addEventListener('click', ()=>{
-    window.open('https://dribbble.com/NikoDOla')
-    console.log('ej')
-})
-socialCode1.addEventListener('click', ()=>{
-    window.open('https://dribbble.com/NikoDOla')
-    console.log('ej')
-})
-socialCode2.addEventListener('click', ()=>{
-    window.open('https://www.behance.net/nikodola/appreciated')
-    console.log('ej')
-})
-socialCode3.addEventListener('click', ()=>{
-    window.open('https://www.instagram.com/niko_dola/?hl=en')
-    console.log('ej')
-})
-socialCode4.addEventListener('click', ()=>{
-    window.open('https://www.linkedin.com/in/nikola-dolovski-b932b0ba/?originalSubdomain=mk')
-    console.log('ej')
-})
-socialCode5.addEventListener('click', ()=>{
-    window.open('https://www.youtube.com/@Niko_Dola')
-    console.log('ej')
-})
-}
-socialClickable()
-
-console.log(contentCode2.scrollHeight )

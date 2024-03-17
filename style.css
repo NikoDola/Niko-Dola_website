@@ -84,19 +84,19 @@ p {
     overflow: hidden;
 }
 
-.social_tabs{
-    position: relative;
-    background-color: white;
-    width: 100%;
-    height: 50px;
+
+.social_media_buttons{
+    display: flex;
+    gap: 30px;
+    z-index: 20
 }
 
 
-.social_icons{
-    position: absolute;
-    height: 50px;
-    left: 30px;
-    top: 10px;
+.social_icon{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
 
 }
 
@@ -120,11 +120,12 @@ p {
     border-radius: 1rem;
 }
 
-
-.social_media_icons{
-    display: flex;
-    gap: 30px;
+.singleSocial{
+    height: 65px;
 }
+
+
+
 
 .icon{
     height: 30px;
@@ -140,6 +141,7 @@ p {
     background-color: var(--light-black-color);
     transition: outline 0.3s, height 1s;
 }
+
 
 .button:hover{
     outline: solid var(--main-color);
@@ -176,7 +178,6 @@ p {
 }
 
 .content{
-    
     position: absolute;
     left: 50%;
     top: 50px;
@@ -187,6 +188,14 @@ p {
     transition: 1s ease-in;
     overflow: hidden;
 }
+
+#contentCode1, #contentCode2, #contentCode3{
+    display: none;
+    visibility: none;
+    opacity: 0;
+    transition: 0.3s ease;
+    }
+    
 
 .content.is-visible {
     opacity: 1;
@@ -305,6 +314,7 @@ width: 100%;
 
 
 .titleBody{
+    
     margin-top: 0px;
     margin-bottom: 40px;
 }
