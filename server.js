@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = process.env.PORT || 5501;
+const port = process.env.PORT || 3200;
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));

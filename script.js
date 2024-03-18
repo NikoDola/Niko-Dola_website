@@ -15,6 +15,8 @@ const secretButtonCode2 = document.getElementById('secretButtonCode2')
 const secretButtonCode3 = document.getElementById('secretButtonCode3')
 const colorInfo = document.getElementById('colorInfo')
 
+const submit = document.getElementById('submit')
+
 const formSet = new Set()
 const colorSet = new Set()
 const inspirationSet = new Set()
@@ -24,6 +26,22 @@ const logoInfo = {
     color: colorSet,
     inspiration: inspirationSet
 }
+
+const jsonString = JSON.stringify(logoInfo)
+
+const filePath = 'data.son';
+
+submit.addEventListener('click', ()=>{
+    fs.writeFile(filePath, jsonString, (err) => {
+        if (err) {
+          console.error('Error writing file:', err);
+          return;
+        }
+        console.log('JSON data has been written to', filePath);
+      });
+})
+
+logoInfo.string
 
 setInterval(() => {
     console.log(logoInfo)

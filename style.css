@@ -46,12 +46,52 @@ p {
 
 }
 
+button{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    font-size: 24px;
+    height: 40px;
+    color: var(--background-color);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #a4faff;
+    font-weight: bold;
+}
 .logo{
-    height: 150px;
-    width: 150px;
-    background-image: url('/assets/icons/logo.png');
-    background-size: cover;
-    
+    margin-top: 40px;
+    position: relative;
+    background-color: var(--main-color);
+    height: 180px;
+    width: 180px;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+
+
+
+
+.bradaKosa{
+    position: absolute;
+    height: 140px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+}
+.naocari{
+    background-image: url(assets/general/shine-01.png);
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
 }
 
 #imgCode1 {
@@ -88,17 +128,11 @@ p {
 .social_media_buttons{
     display: flex;
     gap: 30px;
-    z-index: 20
+    
 }
 
 
-.social_icon{
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
 
-}
 
 
 .button_section{
@@ -284,7 +318,15 @@ width: 100%;
     background-color: #053EFF;
 }
 
+#contactBrief{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
 
+.nameBrief, .emailBrief{
+    width: 100%;
+}
 
 #socialCode3{
     background: #f09433; 
@@ -332,8 +374,21 @@ width: 100%;
 }
 
 @media (max-width: 768px) {
-    
 
+    .bradaKosa{
+        position: absolute;
+        height: 100px;
+        left: 50%;
+        transform: translate(-50%);
+        top: 18px;
+    }
+    .naocari{
+        position: absolute;
+        top: 55px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60px;
+    }
 
       input{
         font-size: 24px;
