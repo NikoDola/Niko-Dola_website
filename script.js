@@ -132,4 +132,54 @@ secretButtonCode3.addEventListener('click', ()=>{
 
 
 
+function logoChangeColors(){
+const logo = document.getElementById('logo')
+const instagram = document.getElementById('instagram')
 
+
+instagram.addEventListener('mouseover', ()=>{
+    logo.style.background='#f56319'
+})
+instagram.addEventListener('mouseout', ()=>{
+    logo.style.background = '#87CFD3';
+})
+
+youtube.addEventListener('mouseover', ()=>{
+    logo.style.background='red'
+})
+youtube.addEventListener('mouseout', ()=>{
+    logo.style.background = '#87CFD3';
+})
+
+pinterest.addEventListener('mouseover', ()=>{
+    logo.style.background='red'
+})
+pinterest.addEventListener('mouseout', ()=>{
+    logo.style.background = '#87CFD3';
+})
+
+linkedin.addEventListener('mouseover', ()=>{
+    logo.style.background='#0A66C2'
+})
+linkedin.addEventListener('mouseout', ()=>{
+    logo.style.background = '#87CFD3';
+})
+
+dribbble.addEventListener('mouseover', ()=>{
+    logo.style.background='#EA4C89'
+})
+dribbble.addEventListener('mouseout', ()=>{
+    logo.style.background = '#87CFD3';
+})
+
+beehance.addEventListener('mouseout', ()=>{
+    logo.style.background = '#87CFD3';
+})
+
+beehance.addEventListener('mouseover', ()=>{
+    logo.style.background='#0A66C2'
+})
+
+}
+
+logoChangeColors()
