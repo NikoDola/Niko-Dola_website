@@ -95,7 +95,7 @@ function imgPicker(name, description, imagePath){
 
 
     
-    input.placeholder = 'Let us know, why you like this design.'
+    input.placeholder = 'you can leve a note here'
     
     
 
