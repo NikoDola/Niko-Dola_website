@@ -10,6 +10,27 @@
         <div>
         <p>Name</p>
         <input type="email" id="name">
+        <div class="checkmark"></div>
+        <style>
+            .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid wheat;
+    position: relative;
+  }
+  
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid wheat;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+        </style>
     </div>
         <button>SEND</button>
     </form>

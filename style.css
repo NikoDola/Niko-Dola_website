@@ -248,6 +248,7 @@ input, textarea{
 }
 
 
+
 input:focus, textarea:focus{
     border: solid var(--main-color) 1px;
     outline: solid var(--main-color) 1px;
@@ -275,6 +276,34 @@ input:-webkit-autofill {
     grid-gap: 10px; /* Gap between grid items */
     grid-auto-flow: row; /* Arrange grid items in rows */
 }
+
+
+.imageDiv{
+    position: relative;
+}
+
+.mainDiv{
+    position: relative;
+}
+.imgInput{
+    position: absolute;
+    top: 105px;
+}
+
+
+  
+  .checkMark:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+  }
+
+
 
 #inspirationTextarea{
     position: absolute;

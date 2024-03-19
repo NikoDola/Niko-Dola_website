@@ -4,7 +4,8 @@ const ColorPicker = []
 function colorPicker(name, description, imagePath){
     const picker = document.getElementById('colorPicker')
 
-    const checkMark = document.createElement('img')
+    const checkMark = document.createElement('div')
+    
     checkMark.className = 'checkMark'
     const checkMarkBg = document.createElement('div')
     checkMarkBg.className = 'checkMarkBg'
@@ -16,7 +17,7 @@ function colorPicker(name, description, imagePath){
     tittle.textContent = name
     bodyText.textContent = description
 
-    checkMark.src = 'assets/icons/check-mark.svg'
+
 
 
 
@@ -82,17 +83,23 @@ colorPicker('Designer_choice', 'Knowledge','/assets/colors/designer_choice.jpg')
 function imgPicker(name, description, imagePath){
     const picker = document.getElementById('imgPicker')
 
-    const checkMark = document.createElement('img')
+    const checkMark = document.createElement('div')
     checkMark.className = 'checkMark'
+
     const checkMarkBg = document.createElement('div')
     checkMarkBg.className = 'checkMarkBg'
+
     const input = document.createElement('textarea')
     input.id = 'inspirationTextarea'
+    input.className = 'imgInput'
+
+
+    
     input.placeholder = 'Let us know, why you like this design.'
     
     
 
-    input.className = 'imgInput'
+    
     const mainDiv = document.createElement('div')
     const imageDiv = document.createElement('div')
     const textDiv= document.createElement('div')
@@ -100,8 +107,8 @@ function imgPicker(name, description, imagePath){
     const bodyText = document.createElement('p')
     tittle.textContent = name
     bodyText.textContent = description
-
-    checkMark.src = 'assets/icons/check-mark.svg'
+    mainDiv.className = 'mainDiv'
+   
  
 
 
@@ -156,5 +163,10 @@ function imgPicker(name, description, imagePath){
 }
 
 
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
 imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
 imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
