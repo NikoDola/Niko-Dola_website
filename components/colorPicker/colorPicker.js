@@ -15,6 +15,7 @@ function colorPicker(name, description, imagePath){
     const tittle = document.createElement('h3')
     const bodyText = document.createElement('p')
     tittle.textContent = name
+    tittle.style.marginTop= '10px'
     bodyText.textContent = description
 
 
@@ -29,8 +30,9 @@ function colorPicker(name, description, imagePath){
     imageDiv.style.backgroundImage = `url('${imagePath}')`
     imageDiv.style.backgroundSize = 'cover'
     imageDiv.style.boxSizing = ' border-box'
-    bodyText.style.marginTop = '-15px'
     bodyText.style.width = '165px'
+    bodyText.style.marginLeft = '0'
+    bodyText.style.padding = '0'
 
     let toggleCode5 = false
 
@@ -106,7 +108,9 @@ function imgPicker(name, description, imagePath){
     const tittle = document.createElement('h3')
     const bodyText = document.createElement('p')
     tittle.textContent = name
+    tittle.style.marginTop= '10px'
     bodyText.textContent = description
+    bodyText.style.marginLeft='0'
     mainDiv.className = 'mainDiv'
    
  
@@ -119,7 +123,7 @@ function imgPicker(name, description, imagePath){
     imageDiv.style.backgroundImage = `url('${imagePath}')`
     imageDiv.style.backgroundSize = 'cover'
     imageDiv.style.boxSizing = ' border-box'
-    bodyText.style.marginTop = '-15px'
+    
     bodyText.style.width = '165px'
 
     let toggleCode5 = false
