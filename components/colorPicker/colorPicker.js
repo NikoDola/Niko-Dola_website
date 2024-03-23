@@ -1,4 +1,3 @@
-const ColorPicker = []
 
 
 function colorPicker(name, description, imagePath){

@@ -161,7 +161,7 @@ button:hover{
     justify-content: space-around;
     flex-direction: column;
     gap: 10px; 
-    cursor: pointer;
+    
 }
 .button{
     position: relative;
@@ -205,6 +205,7 @@ button:hover{
     height: 70px;
     box-sizing: border-box;
     z-index: 5;
+    cursor: pointer;
 }
 
 .arrow{
@@ -289,7 +290,7 @@ input:-webkit-autofill {
 
 #colorPicker, #imgPicker{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Three columns with equal width */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Three columns with equal width */
     grid-gap: 10px; /* Gap between grid items */
     grid-auto-flow: row; /* Arrange grid items in rows */
 }

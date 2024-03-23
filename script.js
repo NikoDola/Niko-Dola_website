@@ -13,7 +13,14 @@ const contentCode3 = document.getElementById('contentCode3')
 const secretButtonCode1 = document.getElementById('secretButtonCode1')
 const secretButtonCode2 = document.getElementById('secretButtonCode2')
 const secretButtonCode3 = document.getElementById('secretButtonCode3')
-const colorInfo = document.getElementById('colorInfo')
+
+const companyNameInput = document.getElementById('companyName')
+const taglineInput = document.getElementById('tagline')
+const hasInput = document.getElementById('has')
+const hasNotInput = document.getElementById('hasNot')
+const colorInput = document.getElementById('colorInfo')
+const nameInput = document.getElementById('name')
+const emailInput = document.getElementById('email')
 
 const submit = document.getElementById('submit')
 
@@ -22,30 +29,38 @@ const colorSet = new Set()
 const inspirationSet = new Set()
 
 const logoInfo = {
-    form: formSet,
+    companyName: companyNameInput.value,
+    tagline: taglineInput.value,
+    has: hasInput.value,
+    hasNot: hasNotInput.value,
     color: colorSet,
-    inspiration: inspirationSet
+    inspiration:inspirationSet,
+    name: nameInput.value,
+    email: emailInput.value
 }
 
-const jsonString = JSON.stringify(logoInfo)
+function Submiting(companyName, tagline, has, hasNot, colorSet, inspiration, name, email){
+    submit.addEventListener('click', () => {
+        // Update logoInfo object properties inside the event listener
+        logoInfo.companyName = companyNameInput.value;
+        logoInfo.tagline = taglineInput.value;
+        logoInfo.has = hasInput.value;
+        logoInfo.hasNot = hasNotInput.value;
+        // Assuming you will collect 'color' and 'inspiration' the same way
+        logoInfo.name = nameInput.value;
+        logoInfo.email = emailInput.value;
+    
+        // Now, log the updated logoInfo object
+        console.log(logoInfo);
+    });
+    
+}
 
-const filePath = 'data.son';
+Submiting()
 
-submit.addEventListener('click', ()=>{
-    fs.writeFile(filePath, jsonString, (err) => {
-        if (err) {
-          console.error('Error writing file:', err);
-          return;
-        }
-        console.log('JSON data has been written to', filePath);
-      });
-})
 
-logoInfo.string
 
-setInterval(() => {
-    console.log(logoInfo)
-}, 1000);
+
 
 const colorData = colorInfo.textContent = colorSet
 // Button 1

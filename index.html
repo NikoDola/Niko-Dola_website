@@ -43,8 +43,8 @@
                 <h1 class="main_buttom_text" id="mainButtonTextCode2">Get your logo</h1>
                 <div class="arrow" id="arrowCode2"></div>
             </div>
-            <form autocomplete="off" action="/send-email" method="post" class="content" id="contentCode2">
-
+            <!-- <form autocomplete="off" action="/send-email" method="post" class="content" id="contentCode2"> -->
+                <div  class="content" id="contentCode2">
                     <!-- Logo design brief -->
                 <div class="Logo_design_brief">
                     
@@ -61,7 +61,7 @@
                         
                          <div id="nameForm"class="formSection">
                             <p>What name do you want in your logo?</p>
-                            <input type="text" name="name" id="name" autocomplete="off">
+                            <input type="text" name="name" id="companyName" autocomplete="off">
                         </div>
 
                         <div id="taglineForm" class="formSection">
@@ -110,17 +110,17 @@
                     <div  id="contactBrief">
                         <div class="nameBrief">
                             <p>Your name</p>
-                            <input type="text">
+                            <input type="text" id="name">
                         </div>
                         <div class="emailBrief">
                             <p>Your email</p>
-                            <input type="email">
+                            <input type="email" id="email">
                         </div>
                     </div>
                     <br>
 
                     <button id="submit">Submit the form</button>
-                </form>
+                </div>
         </div>
 
         <!-- Buttom3  -->
@@ -131,9 +131,6 @@
                 <div class="arrow" id="arrowCode3"></div>
             </div>
             <div class="content" id="contentCode3">
-                <form>
-       
-                </form>
             </div>
         </div> 
 </div>
