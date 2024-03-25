@@ -242,9 +242,10 @@ button:hover{
 }
 
 #contentCode1, #contentCode2, #contentCode3{
-    display: none;
+    margin-top: 50px;
     visibility: none;
     opacity: 0;
+    transition: 0.3s ease;
     transition: 0.3s ease;
     }
     

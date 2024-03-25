@@ -24,9 +24,9 @@ const emailInput = document.getElementById('email')
 
 const submit = document.getElementById('submit')
 
-const formSet = new Set()
-const colorSet = new Set()
-const inspirationSet = new Set()
+const formSet = new Set();
+const colorSet = new Set();
+const inspirationSet = new Set();
 
 const logoInfo = {
     companyName: companyNameInput.value,
@@ -37,30 +37,51 @@ const logoInfo = {
     inspiration:inspirationSet,
     name: nameInput.value,
     email: emailInput.value
-}
+};
 
-function Submiting(companyName, tagline, has, hasNot, colorSet, inspiration, name, email){
-    submit.addEventListener('click', () => {
-        // Update logoInfo object properties inside the event listener
-        logoInfo.companyName = companyNameInput.value;
-        logoInfo.tagline = taglineInput.value;
-        logoInfo.has = hasInput.value;
-        logoInfo.hasNot = hasNotInput.value;
-        // Assuming you will collect 'color' and 'inspiration' the same way
-        logoInfo.name = nameInput.value;
-        logoInfo.email = emailInput.value;
+// function Submiting(companyName, tagline, has, hasNot, colorSet, inspiration, name, email){
+//     submit.addEventListener('click', () => {
+//         // Update logoInfo object properties inside the event listener
+//         logoInfo.companyName = companyNameInput.value;
+//         logoInfo.tagline = taglineInput.value;
+//         logoInfo.has = hasInput.value;
+//         logoInfo.hasNot = hasNotInput.value;
+//         // Assuming you will collect 'color' and 'inspiration' the same way
+//         logoInfo.name = nameInput.value;
+//         logoInfo.email = emailInput.value;
     
-        // Now, log the updated logoInfo object
-        console.log(logoInfo);
-    });
+//         // Now, log the updated logoInfo object
+//         console.log(logoInfo);
+//     });
     
+// }
+
+// Submiting()
+
+
+
+const contactName = document.getElementById('contactName')
+const contactEmail = document.getElementById('contactEmail')
+const contactMessage = document.getElementById('contactMessage')
+
+console.log(contactEmail.value);
+
+
+
+function emailSend(){
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "nikodola@gmail.com",
+        Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
+        To : 'dolovska@hotmail.com',
+        From : "nikodola@gmail.com",
+        Subject : "This is the subject",
+        Body : `Message: ${contactMessage.value}, Email: ${contactEmail.value}, Name: ${contactName.value}`
+    }).then(
+      message => alert(message)
+    );
 }
-
-Submiting()
-
-
-
-
 
 const colorData = colorInfo.textContent = colorSet
 // Button 1
@@ -120,30 +141,28 @@ secretButtonCode2.addEventListener('click', () => {
 
 
 
-// Button 3
-let toggleCode3 = false
-secretButtonCode3.addEventListener('click', ()=>{
-    if (!toggleCode3){
-        buttonCode3.style.height = '300px'
-        arrowCode3.style.transform = 'rotate(90deg)'
-        toggleCode3 = true
-        contentCode3.style.visibility = 'visible'
-        contentCode3.style.opacity = '1'
-        contentCode3.style.transition = '1s ease-out'
-       
-}
-        else{
-            buttonCode3.style.height = ''
-            toggleCode3 = false
-            arrowCode3.style.transform = ''
-            contentCode3.style.visibility = ''
-            contentCode3.style.opacity = '0'
-            contentCode3.style.transition = '0.5s'
-        }
+let toggleCode3 = false;
 
+secretButtonCode3.addEventListener('click', () => {
+    if (!toggleCode3) {
+        contentCode3.style.display = 'block';
+        const contentHeight = contentCode3.scrollHeight;
+        buttonCode3.style.height = contentHeight + 100 + 'px';
+        arrowCode3.style.transform = 'rotate(90deg)';
+        toggleCode3 = true;
+        contentCode3.style.visibility = 'visible';
+        contentCode3.style.opacity = '1';
+        contentCode3.style.transition = '1s ease-out';
+    } else {
+        buttonCode3.style.height = ''; // Reset height to default (auto)
+        toggleCode3 = false;
+        arrowCode3.style.transform = '';
+        contentCode3.style.display = '';
+        contentCode3.style.visibility = '';
+        contentCode3.style.opacity = '0';
+        contentCode3.style.transition = '0.5s';
     }
-    
-)
+});
 
 
 

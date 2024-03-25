@@ -131,6 +131,20 @@
                 <div class="arrow" id="arrowCode3"></div>
             </div>
             <div class="content" id="contentCode3">
+                <form onsubmit="emailSend(); reset(); return false">
+                    <p>Name</p>
+                    <input type="text" id="contactName">
+                    <p>Email</p>
+                    <input type="email" id="contactEmail" autocomplete="true">
+                    <p>Your message goes here</p>
+                    <textarea id="contactMessage"></textarea>
+
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <button type="submit" classs="btn">Submit</button>
+                     </form>
             </div>
         </div> 
 </div>
@@ -205,6 +219,8 @@
 </section>
 
 <script src="script.js"> </script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 <script src="components/colorPicker/colorPicker.js"></script>
 
 
