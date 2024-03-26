@@ -124,6 +124,7 @@ button:hover{
 }
 
 .main{
+    position: relative;
     width: 100vw;
     position: absolute;
     display: flex;
@@ -186,13 +187,19 @@ button:hover{
     border-radius: 100%;
 }
 #contentCode3{
+    transition: 1s;
     visibility:visible;
 }
 
 .button{
     background-color: var(--light-black-color);
     transition: outline 0.3s, height 1s;
+    
 }
+#buttonCode3{
+    transition: 0.4s;
+}
+
 
 
 .button:hover{
@@ -217,7 +224,7 @@ button:hover{
     background-image: url('/assets/general/arrow.png');
     background-size: cover;
     top: 30px;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -243,10 +250,10 @@ button:hover{
 }
 
 #contentCode1, #contentCode2, #contentCode3{
-    margin-top: 50px;
+    margin-top: 20px;
+    display: none;
     visibility: none;
     opacity: 0;
-    transition: 0.3s ease;
     transition: 0.3s ease;
     }
     
@@ -280,11 +287,7 @@ textarea{
     height: 100px;
 }
 
-#redImage{
-    height: 170px;
-    width: 170px;
-    background-color: red;
-}
+
 
 input:-webkit-autofill {
     -webkit-text-fill-color: var(--background-color); /* Change to your desired text color */
@@ -426,6 +429,9 @@ width: 100%;
 
 #tittleMain{
     text-align: center;
+    margin-top: 0;
+    height: max-content;
+    z-index: 3;
 
 }
 .tittleMain{
@@ -437,13 +443,18 @@ width: 100%;
 
 
 .titleBody{
-    
+    display: flex;
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 50px;
 }
 
 .titleHeader{
     margin: 0;
+    
 }
 
 #colorInfo{
@@ -452,6 +463,7 @@ width: 100%;
 
 .formSection{
     margin-bottom: 30px;
+    margin-top: 60px;
 }
 
 .foother{

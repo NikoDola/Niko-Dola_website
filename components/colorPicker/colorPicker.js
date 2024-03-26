@@ -168,8 +168,51 @@ function imgPicker(name, description, imagePath){
     picker.appendChild(mainDiv)
 
 }
-
-
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
+imgPicker( 'BEE - 3D', '#creative #playful  #modern #3d', '/assets/inspiration_Images/logo_bee-3d.png')
+imgPicker( 'Banana', '#creative #playful #cartoonish, #youthful', '/assets/inspiration_Images/logo_banana.png')
+imgPicker( '8b', '#Monogram, #classic, #minimal, #playful', '/assets/inspiration_Images/logo_8b.png')
 imgPicker( 'Astronaut beer', 'Minimal Logo design', '/assets/inspiration_Images/logo_Astronaut_beer.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_bear.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_bee.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_BH.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_blossoms.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_Burger.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_camaleon.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_celestial-snax.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_cherry-house.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_Dracula.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_ecolight.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_game-over.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_flo.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_grifin.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_hotdog-character.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_iko-media.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_juicy-world.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_lemonade.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_Lion.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_love.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_mig.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_most-valuable.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_optimal-fitness.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_orca.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_puppy-bone.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_Rabbit.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_rocket-minimal.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_rose-wine.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_safe-home.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_skyfilms.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_space-donut.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_swaney.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_synnove.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_tags.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_TM.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_Unihorn.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_ververicka.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_visionary.png')
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_walk.png')
+
+
+
+
+
 

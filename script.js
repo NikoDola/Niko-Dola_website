@@ -94,21 +94,23 @@ let toggleCode2 = false;
 secretButtonCode2.addEventListener('click', () => {
     if (!toggleCode2) {
         contentCode2.style.display = 'block';
+        contentCode2.style.visibility = 'visible';
         const contentHeight = contentCode2.scrollHeight;
         buttonCode2.style.height = contentHeight + 100 + 'px';
         arrowCode2.style.transform = 'rotate(90deg)';
         toggleCode2 = true;
-        contentCode2.style.visibility = 'visible';
         contentCode2.style.opacity = '1';
-        contentCode2.style.transition = '1s ease-out';
+        contentCode2.style.transition = '2s ease-out';
     } else {
         buttonCode2.style.height = ''; // Reset height to default (auto)
+        buttonCode2.style.height = '';
         toggleCode2 = false;
         arrowCode2.style.transform = '';
+        contentCode2.style.transition = '0';
         contentCode2.style.display = '';
         contentCode2.style.visibility = '';
         contentCode2.style.opacity = '0';
-        contentCode2.style.transition = '0.5s';
+        
     }
 });
 
