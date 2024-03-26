@@ -93,12 +93,6 @@ function imgPicker(name, description, imagePath){
     input.className = 'imgInput'
     input.placeholder = 'you can leve a note here'
 
-    if(!input.value){
-        console.log('eeee')
-    }
-    else{
-        console.log('ete chini')
-    }
 
    
  
@@ -177,9 +171,5 @@ function imgPicker(name, description, imagePath){
 
 
 imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
+imgPicker( 'Astronaut beer', 'Minimal Logo design', '/assets/inspiration_Images/logo_Astronaut_beer.png')
+

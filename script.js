@@ -249,9 +249,5 @@ function LogoEmail(){
 }
 
 
-setInterval(() => {
-
-    console.log(inspirationSet)
-}, 1000);
 
 
