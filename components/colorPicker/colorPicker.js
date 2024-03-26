@@ -83,22 +83,26 @@ colorPicker('Designer_choice', 'Knowledge','/assets/colors/designer_choice.jpg')
 
 function imgPicker(name, description, imagePath){
     const picker = document.getElementById('imgPicker')
-
     const checkMark = document.createElement('div')
     checkMark.className = 'checkMark'
-
     const checkMarkBg = document.createElement('div')
     checkMarkBg.className = 'checkMarkBg'
 
     const input = document.createElement('textarea')
     input.id = 'inspirationTextarea'
     input.className = 'imgInput'
-
-
-    
     input.placeholder = 'you can leve a note here'
-    
-    
+
+    if(!input.value){
+        console.log('eeee')
+    }
+    else{
+        console.log('ete chini')
+    }
+
+   
+ 
+  
 
     
     const mainDiv = document.createElement('div')
@@ -127,25 +131,25 @@ function imgPicker(name, description, imagePath){
 
     let toggleCode5 = false
 
+    let selected = false
     imageDiv.addEventListener('click', function(){
         if (!toggleCode5 && inspirationSet.size <4){
-           
             checkMarkBg.style.display='block'
-            inspirationSet.add(`${name} ${input.value}`)
             toggleCode5 = true
             imageDiv.style.border = 'solid var(--main-color)'
             input.style.display = 'block'
+            selected = true
         }
 
         else if (toggleCode5){
             checkMarkBg.style.display='none'
-            inspirationSet.delete(name)
             toggleCode5 = false
             imageDiv.style.border=''
             input.style.display = 'none'
+            selected = false
         }
 
-        if (inspirationSet.size === 4 ){
+        if (inspirationSet.size === 10 ){
             picker.style.opacity = '0.5'
         }
         else{
@@ -153,6 +157,12 @@ function imgPicker(name, description, imagePath){
         }
         
     })
+    submit.addEventListener('click', ()=>{
+        if(selected){
+            inspirationSet.add(` image ${name}, text: ${input.value}`)
+        }
+    })
+   
     checkMarkBg.appendChild(checkMark)
     imageDiv.appendChild(checkMarkBg)
     

@@ -43,17 +43,17 @@
                 <h1 class="main_buttom_text" id="mainButtonTextCode2">Get your logo</h1>
                 <div class="arrow" id="arrowCode2"></div>
             </div>
-            <!-- <form autocomplete="off" action="/send-email" method="post" class="content" id="contentCode2"> -->
-                <div  class="content" id="contentCode2">
+            
+                <form onsubmit="LogoEmail(); reset(); return false" class="content" id="contentCode2"> 
                     <!-- Logo design brief -->
-                <div class="Logo_design_brief">
+                    <div class="Logo_design_brief">
                     
 
                     <div class="tittleMain" id="tittleMain">
-                        <p class="titHeader">Fill out the  </p>
+                        <p class="titHeader">Fill out the </p>
                         <h1 class='titleBody'>Logo Design Brief</h1>
-                     </div>
-                     <hr>
+                    </div>
+                    <hr>
                     <div class="backgroundInformation">
                         <div class="tittleMain">
                             <h2 class="titHeader">Background Information</h2>
@@ -80,8 +80,8 @@
                         </div>
 
                     </div>
-                </div>
-
+              
+                </form>
                 <hr>
                     <!-- Color Picker -->
                     <div class="tittleMain">
@@ -89,7 +89,7 @@
                         <p class="titleBody">Pick up to four colors you'd like your designers to explore.</p>
                      </div>
                     <div class="colorPicker" id="colorPicker">
-                        <input id="colorInfo" type="text">
+                      
                     </div>
 
                     <!-- image Picker -->
@@ -109,12 +109,12 @@
 
                     <div  id="contactBrief">
                         <div class="nameBrief">
-                            <p>Your name</p>
-                            <input type="text" id="name">
+                            <p>Your name *</p>
+                            <input type="text" id="name" required="true">
                         </div>
                         <div class="emailBrief">
-                            <p>Your email</p>
-                            <input type="email" id="email">
+                            <p>Your email *</p>
+                            <input type="email" id="email" required="true">
                         </div>
                     </div>
                     <br>
@@ -131,7 +131,7 @@
                 <div class="arrow" id="arrowCode3"></div>
             </div>
             <div class="content" id="contentCode3">
-                <form onsubmit="emailSend(); reset(); return false">
+                <form onsubmit="ContactEmail(); reset(); return false">
                     <p>Name</p>
                     <input type="text" id="contactName">
                     <p>Email</p>

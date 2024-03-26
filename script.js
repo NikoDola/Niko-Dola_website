@@ -14,30 +14,28 @@ const secretButtonCode1 = document.getElementById('secretButtonCode1')
 const secretButtonCode2 = document.getElementById('secretButtonCode2')
 const secretButtonCode3 = document.getElementById('secretButtonCode3')
 
-const companyNameInput = document.getElementById('companyName')
-const taglineInput = document.getElementById('tagline')
-const hasInput = document.getElementById('has')
-const hasNotInput = document.getElementById('hasNot')
-const colorInput = document.getElementById('colorInfo')
-const nameInput = document.getElementById('name')
-const emailInput = document.getElementById('email')
+
 
 const submit = document.getElementById('submit')
 
 const formSet = new Set();
 const colorSet = new Set();
 const inspirationSet = new Set();
+logoChangeColors()
+// const logoInfo = {
+//     companyName: companyNameInput.value,
+//     tagline: taglineInput.value,
+//     has: hasInput.value,
+//     hasNot: hasNotInput.value,
+//     color: colorSet,
+//     inspiration:inspirationSet,
+//     name: nameInput.value,
+//     email: emailInput.value
+// };
 
-const logoInfo = {
-    companyName: companyNameInput.value,
-    tagline: taglineInput.value,
-    has: hasInput.value,
-    hasNot: hasNotInput.value,
-    color: colorSet,
-    inspiration:inspirationSet,
-    name: nameInput.value,
-    email: emailInput.value
-};
+// setInterval(() => {
+//     console.log(logoInfo)
+// }, 1000);
 
 // function Submiting(companyName, tagline, has, hasNot, colorSet, inspiration, name, email){
 //     submit.addEventListener('click', () => {
@@ -56,32 +54,7 @@ const logoInfo = {
     
 // }
 
-// Submiting()
 
-
-
-const contactName = document.getElementById('contactName')
-const contactEmail = document.getElementById('contactEmail')
-const contactMessage = document.getElementById('contactMessage')
-
-console.log(contactEmail.value);
-
-
-
-function emailSend(){
-
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "nikodola@gmail.com",
-        Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
-        To : 'dolovska@hotmail.com',
-        From : "nikodola@gmail.com",
-        Subject : "This is the subject",
-        Body : `Message: ${contactMessage.value}, Email: ${contactEmail.value}, Name: ${contactName.value}`
-    }).then(
-      message => alert(message)
-    );
-}
 
 const colorData = colorInfo.textContent = colorSet
 // Button 1
@@ -216,4 +189,69 @@ beehance.addEventListener('mouseover', ()=>{
 
 }
 
-logoChangeColors()
+
+
+const contactName = document.getElementById('contactName')
+const contactEmail = document.getElementById('contactEmail')
+const contactMessage = document.getElementById('contactMessage')
+const companyNameInput = document.getElementById('companyName')
+const taglineInput = document.getElementById('tagline')
+const hasInput = document.getElementById('has')
+const hasNotInput = document.getElementById('hasNot')
+const nameInput = document.getElementById('name')
+const emailInput = document.getElementById('email')
+
+
+
+
+
+console.log(contactEmail.value);
+
+
+function ContactEmail(){
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "nikodola@gmail.com",
+        Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
+        To : 'dolovska@hotmail.com',
+        From : "nikodola@gmail.com",
+        Subject : "Contact US ",
+        Body : `Message: ${contactMessage.value}, 
+        Email: ${contactEmail.value}, Name: ${contactName.value}`
+    }).then(
+      message => alert(message)
+    );
+}
+
+function LogoEmail(){
+    // Convert the Sets to Arrays and join them into strings right here
+    const colorAray = Array.from(colorSet).join(', '); // Ensure this variable is defined within this function
+    const inspirationAray = Array.from(inspirationSet).join(', '); // Same for this variable
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "nikodola@gmail.com",
+        Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
+        To : 'dolovska@hotmail.com',
+        From : "nikodola@gmail.com",
+        Subject : "LogoOrder",
+        Body : 
+        `Name: ${nameInput.value}<br><br>
+         Email: ${emailInput.value}<br><br>
+        I would like to see in the logo: ${hasInput.value}<br><br>
+        I do not like to have: ${hasNotInput.value}<br><br>
+        colors that i like are: ${colorAray}<br><br>
+        inspiration images: ${inspirationAray}`
+    }).then(
+      () => alert('Message sent')
+    );
+}
+
+
+setInterval(() => {
+
+    console.log(inspirationSet)
+}, 1000);
+
+
