@@ -1,9 +1,8 @@
 
 
 function colorPicker(name, description, imagePath){
-    const picker = document.getElementById('colorPicker')
-
-    const checkMark = document.createElement('div')
+    const picker = document.getElementById('colorPicker');
+    const checkMark = document.createElement('div');
     
     checkMark.className = 'checkMark'
     const checkMarkBg = document.createElement('div')
@@ -113,13 +112,15 @@ function imgPicker(name, description, imagePath){
     bodyText.style.width = '165px'
     let toggleCode5 = false
     let selected = false
+    
     imageDiv.addEventListener('click', function(){
-        if (!toggleCode5 && inspirationSet.size <10){
+        if (!toggleCode5 ){
             checkMarkBg.style.display='block'
             toggleCode5 = true
             imageDiv.style.border = 'solid var(--main-color)'
             input.style.display = 'block'
             selected = true
+            
         }
 
         else if (toggleCode5){
@@ -130,12 +131,7 @@ function imgPicker(name, description, imagePath){
             selected = false
         }
 
-        if (inspirationSet.size === 10 ){
-            imgPicker.style.opacity = '0.5'
-        }
-        else{
-           picker.style.opacity = '1' 
-        }
+   
         
     })
     submit.addEventListener('click', ()=>{
