@@ -1,10 +1,12 @@
 
+  const emailInput = document.getElementById('email');
+  const nameInput = document.getElementById('name');
+  const submitButton = document.getElementById('submitBtn');
 
-setInterval(() => {
-  const one = document.getElementById('one')
-  const lista = new Set()
+  function updateButtonState() {
+      submitButton.disabled = !(emailInput.value && nameInput.value && emailInput.value);
+  }
 
-  lista.add(one.value)
-  console.log(lista)
+  emailInput.addEventListener('input', updateButtonState);
+  nameInput.addEventListener('input', updateButtonState);
 
-}, 1000);

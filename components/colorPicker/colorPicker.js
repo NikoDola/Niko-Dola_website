@@ -87,17 +87,10 @@ function imgPicker(name, description, imagePath){
     checkMark.className = 'checkMark'
     const checkMarkBg = document.createElement('div')
     checkMarkBg.className = 'checkMarkBg'
-
     const input = document.createElement('textarea')
     input.id = 'inspirationTextarea'
     input.className = 'imgInput'
     input.placeholder = 'you can leve a note here'
-
-
-   
- 
-  
-
     
     const mainDiv = document.createElement('div')
     const imageDiv = document.createElement('div')
@@ -110,9 +103,6 @@ function imgPicker(name, description, imagePath){
     bodyText.style.marginLeft='0'
     mainDiv.className = 'mainDiv'
    
- 
-
-
     imageDiv.className = 'imageDiv'
     imageDiv.style.position ='relative'
     imageDiv.style.height = '165px'
@@ -120,14 +110,11 @@ function imgPicker(name, description, imagePath){
     imageDiv.style.backgroundImage = `url('${imagePath}')`
     imageDiv.style.backgroundSize = 'cover'
     imageDiv.style.boxSizing = ' border-box'
-    
     bodyText.style.width = '165px'
-
     let toggleCode5 = false
-
     let selected = false
     imageDiv.addEventListener('click', function(){
-        if (!toggleCode5 && inspirationSet.size <4){
+        if (!toggleCode5 && inspirationSet.size <10){
             checkMarkBg.style.display='block'
             toggleCode5 = true
             imageDiv.style.border = 'solid var(--main-color)'
@@ -144,7 +131,7 @@ function imgPicker(name, description, imagePath){
         }
 
         if (inspirationSet.size === 10 ){
-            picker.style.opacity = '0.5'
+            imgPicker.style.opacity = '0.5'
         }
         else{
            picker.style.opacity = '1' 
@@ -152,8 +139,8 @@ function imgPicker(name, description, imagePath){
         
     })
     submit.addEventListener('click', ()=>{
-        if(selected && nameInput && emailInput){
-            inspirationSet.add(` image ${name}, text: ${input.value} \n`)
+        if(selected){
+            inspirationSet.add(` image ${name}, text: ${input.value}`)
         }
     })
    
@@ -168,6 +155,9 @@ function imgPicker(name, description, imagePath){
     picker.appendChild(mainDiv)
 
 }
+
+
+imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
 imgPicker( 'BEE - 3D', '#Creative #Playful  #Modern #3d', '/assets/inspiration_Images/logo_bee-3d.png')
 imgPicker( 'Banana', '#Creative #Playful #Cartoonish, #youthful', '/assets/inspiration_Images/logo_banana.png')
 imgPicker( '8b', '#Monogram, #classic, #minimal, #playful', '/assets/inspiration_Images/logo_8b.png')
@@ -210,9 +200,4 @@ imgPicker( 'Unihorn', '8bForm', '/assets/inspiration_Images/logo_Unihorn.png')
 imgPicker( 'Squirrel nut', '8bForm', '/assets/inspiration_Images/logo_ververicka.png')
 imgPicker( 'Visionary', '8bForm', '/assets/inspiration_Images/logo_visionary.png')
 imgPicker( 'Walk', '8bForm', '/assets/inspiration_Images/logo_walk.png')
-
-
-
-
-
 

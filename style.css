@@ -2,14 +2,13 @@
     --main-color: #87CFD3;
     --background-color:#0E1011;
     --light-black-color:#1E2223;
-    --text-color:#E4E8E9;
+    --text-color:#dcddde;
 }
 body{
     padding: 0;
     margin: 0;
     background: var(--background-color);
     overflow-x: hidden;
-    
 }
 
 placeholder::content{
@@ -17,9 +16,9 @@ placeholder::content{
 }
 
 hr{
-
     border: solid var(--background-color) 1px;
 }
+
 h1{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-color);
@@ -31,7 +30,6 @@ h2{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-color);
     margin: 0;
-
 }
 
 h3{
@@ -50,14 +48,15 @@ h4{
     font-weight:300;
     color: lightgray;
 }
+
 p {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 20px;
+    font-weight: 100;
+    line-height: 22px;
     color: var(--text-color);
     box-sizing: border-box;
     margin: 5px;
     margin-left: auto;
-
 }
 
 button{
@@ -78,6 +77,7 @@ button:hover{
     background-color: #a4faff;
     font-weight: bold;
 }
+
 .logo{
     position: relative;
     background: var(--main-color);
@@ -88,10 +88,6 @@ button:hover{
     transition: 0.5s;
 }
 
-
-
-
-
 .bradaKosa{
     position: absolute;
     height: 140px;
@@ -99,6 +95,7 @@ button:hover{
     transform: translate(-50%);
     top: 20px;
 }
+
 .naocari{
     background-image: url(assets/general/shine-01.png);
     position: absolute;
@@ -113,7 +110,6 @@ button:hover{
     height: 500px;
     background-image: url('assets/images_of-me/picture_me1.jpg');
     background-size: cover;
-
 }
 
 #imgCode2 {
@@ -124,7 +120,6 @@ button:hover{
 }
 
 .main{
-   
     width: 100vw;
     position: absolute;
     display: flex;
@@ -137,10 +132,7 @@ button:hover{
     padding-left: 100px;
     margin-top: 30px;
     overflow: hidden;
- 
-
 }
-
 
 .social_media_buttons{
     display: flex;
@@ -148,12 +140,7 @@ button:hover{
     width: 5%;
     justify-content: center;
     align-items: center;
-    
 }
-
-
-
-
 
 .button_section{
     position: relative;
@@ -164,8 +151,8 @@ button:hover{
     justify-content: space-around;
     flex-direction: column;
     gap: 10px; 
-    
 }
+
 .button{
     position: relative;
     background-color: white;
@@ -178,15 +165,13 @@ button:hover{
     height: 65px;
 }
 
-
-
-
 .icon{
     height: 30px;
     width: 30px;
     background-color: red;
     border-radius: 100%;
 }
+
 #contentCode3{
     transition: 1s;
     visibility:visible;
@@ -195,17 +180,15 @@ button:hover{
 .button{
     background-color: var(--light-black-color);
     transition: outline 0.3s, height 1s;
-    
 }
 #buttonCode3{
     transition: 0.4s;
 }
 
-
-
 .button:hover{
     outline: solid var(--main-color);
 }
+
 .secret_button{
     display: flex;
     position: absolute;
@@ -258,7 +241,6 @@ button:hover{
     transition: 0.3s ease;
     }
     
-
 .content.is-visible {
     opacity: 1;
     transform: none;
@@ -271,11 +253,8 @@ input, textarea{
     padding: 10px;
     background-color: var(--text-color);
     border: none;
-    color: black;
-   
+    color: black; 
 }
-
-
 
 input:focus, textarea:focus{
     border: solid var(--main-color) 1px;
@@ -287,8 +266,6 @@ textarea{
     width: 100%;
     height: 100px;
 }
-
-
 
 input:-webkit-autofill {
     -webkit-text-fill-color: var(--background-color); /* Change to your desired text color */
@@ -302,7 +279,6 @@ input:-webkit-autofill {
     row-gap: 20px;
 }
 
-
 .imageDiv{
     position: relative;
 }
@@ -310,14 +286,13 @@ input:-webkit-autofill {
 .mainDiv{
     position: relative;
 }
+
 .imgInput{
     position: absolute;
     top: 105px;
 }
 
-
-  
-  .checkMark:after {
+.checkMark:after {
     content: '';
     position: absolute;
     left: 7px;
@@ -326,9 +301,7 @@ input:-webkit-autofill {
     border: solid white;
     border-width: 0 5px 5px 0;
     transform: rotate(45deg);
-  }
-
-
+}
 
 #inspirationTextarea{
     position: absolute;
@@ -343,7 +316,6 @@ input:-webkit-autofill {
     height: 20px;
     top: 10px;
     left: 6px;
-
 }
 
 .checkMarkBg{
@@ -353,18 +325,13 @@ background-color: var(--main-color);
 position: relative;
 display: none;
 outline: solid var(--main-color);
-
 }
-
-
 
 textarea{
 box-sizing: border-box;
 padding: 10px;
 width: 100%;
 }
-
-
 
 #contactBrief{
     display: flex;
@@ -375,7 +342,6 @@ width: 100%;
 .nameBrief, .emailBrief{
     width: 100%;
 }
-
 
 .socialBg{
     position: relative;
@@ -397,6 +363,7 @@ width: 100%;
     transform: translate(-50%, -50%);
     transition: 0.5s;
 }
+
 .singleSocial:hover{
     width: 60px;
 }
@@ -408,40 +375,37 @@ width: 100%;
 #beehance:hover{
     background-color: blue;
 }
+
 #linkedin:hover{
     background-color: #0A66C2;
 }
+
 #pinterest:hover{
     background-color: red;
 }
+
 #youtube:hover{
     background-color: red;
 }
 
 #instagram:hover{
-
     background: #f56319; 
-      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-      
-
-      
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);  
 }
-
 
 #tittleMain{
     text-align: center;
     margin-top: 0;
     height: max-content;
     z-index: 3;
-
 }
+
 .tittleMain{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
 }
-
 
 .titleBody{
     display: flex;
@@ -455,7 +419,6 @@ width: 100%;
 
 .titleHeader{
     margin: 0;
-    
 }
 
 #colorInfo{
@@ -463,8 +426,7 @@ width: 100%;
 }
 
 .formSection{
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }
 
 .foother{
@@ -473,6 +435,7 @@ width: 100%;
     align-items: center;
     justify-content: space-between;
 }
+
 .myBlog{
     margin: 0;
     padding: 0;
@@ -504,6 +467,7 @@ width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
 @media (max-width: 1800px){
     #colorPicker, #imgPicker{
         display: grid;
@@ -512,8 +476,8 @@ width: 100%;
         grid-auto-flow: row; /* Arrange grid items in rows */
         row-gap: 20px;
     }
-    
 }
+
 @media (max-width: 768px) {
     .bradaKosa{
         position: absolute;
@@ -522,6 +486,7 @@ width: 100%;
         transform: translate(-50%);
         top: 18px;
     }
+
     .naocari{
         position: absolute;
         top: 55px;
@@ -530,19 +495,19 @@ width: 100%;
         width: 60px;
     }
 
-      input{
+    input{
         font-size: 24px;
       }
-      textarea{
+
+    textarea{
         font-size: 16px;
       }
-#colorPicker, #imgPicker{
+
+    #colorPicker, #imgPicker{
         display: grid;
         grid-template-columns: 1fr 1fr; /* Three columns with equal width */
         grid-gap: 10px; /* Gap between grid items */
         row-gap: 20px;
-       
-    
     }
 
     .main_buttom_text{
@@ -557,34 +522,35 @@ width: 100%;
         padding: 3%;
         overflow-x: hidden;
     }
+
     .button{
         width: 100%;
         height: 50px;
     }
   
-
     .social_media_buttons{
         display: flex;
         gap: 15px;
         width: 0%;
         justify-content: center;
         align-items: center;
-        
     }
+
     .main_buttom_text{
         top: 12px;    
     }
+
     .socialBg{
         height: 40px;   
         width: 40px;
     }
+
     .singleSocial{
         height: 40px;
     }
+
     .logo{
         height: 130px;
         width: 130px;
     }
-
-   
 }
