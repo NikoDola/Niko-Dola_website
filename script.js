@@ -192,7 +192,7 @@ function ContactEmail(){
         Body : `Message: ${contactMessage.value}, 
         Email: ${contactEmail.value}, Name: ${contactName.value}`
     }).then(
-      message => alert(message)
+        () => alert('Message has been sent!')
     );
 }
 
@@ -216,7 +216,7 @@ function LogoEmail(){
         colors that i like are: ${colorAray}<br><br>
         inspiration images: ${inspirationAray}`
     }).then(
-      () => alert('Message sent')
+      () => alert('Message has been sent!')
     );
 }
 

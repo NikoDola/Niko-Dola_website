@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL9KM9HX07"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SL9KM9HX07');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niko Dola | Freelancer | Logo and Brand designer</title>
@@ -133,14 +142,27 @@
             </div>
             <div class="content" id="contentCode3">
                 <form onsubmit="ContactEmail(); reset(); return false">
-                    <p>Name</p>
-                    <input type="text" id="contactName">
-                    <p>Email</p>
-                    <input type="email" id="contactEmail" autocomplete="true">
-                    <p>Your message goes here</p>
-                    <textarea id="contactMessage"></textarea>
+                    <!-- <div id="nameForm"class="formSection">
+                        <p>What name do you want in your logo?</p>
+                        <input type="text" name="name" id="companyName" autocomplete="off">
+                    </div> -->
+                    <div id="nameFormContact"class="formSection">
+                        <p>Name</p>
+                        <input type="text" id="contactName">
+                    </div>
+                    <div id="EmailFormContact"class="formSection">
+                        <p>Email</p>
+                        <input type="email" id="contactEmail" autocomplete="true">
+                    </div>
 
-                    <br>
+                    <div id="EmailFormContact" class="formSection">
+                        <p>Your message goes here</p>
+                        <textarea id="contactMessage"></textarea>
+                        <div>
+                    </div>
+
+
+
                     <br>
                     <br>
                     
