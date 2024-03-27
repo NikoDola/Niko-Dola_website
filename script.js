@@ -22,37 +22,7 @@ const formSet = new Set();
 const colorSet = new Set();
 const inspirationSet = new Set();
 logoChangeColors()
-// const logoInfo = {
-//     companyName: companyNameInput.value,
-//     tagline: taglineInput.value,
-//     has: hasInput.value,
-//     hasNot: hasNotInput.value,
-//     color: colorSet,
-//     inspiration:inspirationSet,
-//     name: nameInput.value,
-//     email: emailInput.value
-// };
 
-// setInterval(() => {
-//     console.log(logoInfo)
-// }, 1000);
-
-// function Submiting(companyName, tagline, has, hasNot, colorSet, inspiration, name, email){
-//     submit.addEventListener('click', () => {
-//         // Update logoInfo object properties inside the event listener
-//         logoInfo.companyName = companyNameInput.value;
-//         logoInfo.tagline = taglineInput.value;
-//         logoInfo.has = hasInput.value;
-//         logoInfo.hasNot = hasNotInput.value;
-//         // Assuming you will collect 'color' and 'inspiration' the same way
-//         logoInfo.name = nameInput.value;
-//         logoInfo.email = emailInput.value;
-    
-//         // Now, log the updated logoInfo object
-//         console.log(logoInfo);
-//     });
-    
-// }
 
 
 

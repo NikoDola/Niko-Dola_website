@@ -463,7 +463,7 @@ width: 100%;
 
 .formSection{
     margin-bottom: 30px;
-    margin-top: 60px;
+    
 }
 
 .foother{
@@ -499,6 +499,10 @@ width: 100%;
     width: 100%;
 }
 
+#backgroundSection{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
 @media (max-width: 1800px){
     #colorPicker, #imgPicker{
         display: grid;
