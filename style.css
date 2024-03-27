@@ -511,7 +511,6 @@ width: 100%;
     }
 
     .main_buttom_text{
-        margin-top: -3px;
     }
 
     .arrow{
@@ -536,9 +535,7 @@ width: 100%;
         align-items: center;
     }
 
-    .main_buttom_text{
-        top: 12px;    
-    }
+
 
     .socialBg{
         height: 40px;   
