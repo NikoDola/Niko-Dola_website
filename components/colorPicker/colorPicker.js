@@ -152,7 +152,7 @@ function imgPicker(name, description, imagePath){
         
     })
     submit.addEventListener('click', ()=>{
-        if(selected){
+        if(selected && nameInput && emailInput){
             inspirationSet.add(` image ${name}, text: ${input.value} \n`)
         }
     })

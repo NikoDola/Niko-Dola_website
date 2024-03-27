@@ -124,7 +124,7 @@ button:hover{
 }
 
 .main{
-    position: relative;
+   
     width: 100vw;
     position: absolute;
     display: flex;
@@ -137,6 +137,8 @@ button:hover{
     padding-left: 100px;
     margin-top: 30px;
     overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
 
