@@ -273,7 +273,7 @@ input:-webkit-autofill {
 
 #colorPicker, #imgPicker{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* Three columns with equal width */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ; /* Three columns with equal width */
     grid-gap: 10px; /* Gap between grid items */
     grid-auto-flow: row; /* Arrange grid items in rows */
     row-gap: 20px;

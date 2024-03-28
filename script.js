@@ -189,25 +189,48 @@ function ContactEmail(){
 function LogoEmail(){
     const colorAray = Array.from(colorSet).join(', '); 
     const inspirationAray = Array.from(inspirationSet).join(', '); 
+ 
+        const params = {
+            companyName: companyNameInput.value,
+            tagLine: taglineInput.value,
+            has: hasInput.value,
+            hasNot: hasNotInput.value,
+            color: colorAray,
+            inspiration: inspirationAray,
+            name: nameInput.value,
+            email: emailInput.value
+        };
 
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "nikodola@gmail.com",
-        Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
-        To : 'dolovska@hotmail.com',
-        From : "nikodola@gmail.com",
-        Subject : "LogoOrder",
-        Body : 
-        `Name: ${nameInput.value}<br><br>
-         Email: ${emailInput.value}<br><br>
-        I would like to see in the logo: ${hasInput.value}<br><br>
-        I do not like to have: ${hasNotInput.value}<br><br>
-        colors that i like are: ${colorAray}<br><br>
-        inspiration images: ${inspirationAray}`
-    }).then(
-      () => alert('Message has been sent!')
-    );
+        // Sending email
+        emailjs.send("service_3r25scb", "template_7m9enxl", params)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email sent successfully');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Failed to send email: ' + error);
+            });
+
+
+    // Email.send({
+    //     Host : "smtp.elasticemail.com",
+    //     Username : "nikodola@gmail.com",
+    //     Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
+    //     To : 'dolovska@hotmail.com',
+    //     From : "nikodola@gmail.com",
+    //     Subject : "LogoOrder",
+    //     Body : 
+    //     `Name: ${nameInput.value}<br><br>
+    //      Email: ${emailInput.value}<br><br>
+    //     I would like to see in the logo: ${hasInput.value}<br><br>
+    //     I do not like to have: ${hasNotInput.value}<br><br>
+    //     colors that i like are: ${colorAray}<br><br>
+    //     inspiration images: ${inspirationAray}`
+    // }).then(
+    //   () => alert('Message has been sent!')
+    // );
 }
+
 
 
 

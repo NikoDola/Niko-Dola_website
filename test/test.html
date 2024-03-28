@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Qki0lVqKeYPFzsg1j",
+      });
+   })();
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-  <form id="form">
+  <form onsubmit="sendEmail();reset();return false " id="form">
     Email: <input type="email" id="email" placeholder="Enter your email"><br>
-    Name: <input type="text" id="name" placeholder="Enter your name"><br>
-    <button type="submit" id="submitBtn" disabled>Submit</button>
+    name: <input type="name" id="name" placeholder="Enter your email"><br>
+    <textarea  type="text" id="message"></textarea>
+    <button  type="submit" id="submitBtn">Submit</button>
 </form>
     
   <script src="/test/test.js"></script>  
