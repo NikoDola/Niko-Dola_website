@@ -11,6 +11,7 @@ body{
     overflow-x: hidden;
 }
 
+
 placeholder::content{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif
 }
@@ -251,15 +252,18 @@ input, textarea{
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    background-color: var(--text-color);
+    background-color: var(--background-color);
     border: none;
-    color: black; 
+    color: var(--text-color);
+    caret-color: var(--main-color);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif
+
 }
 
 input:focus, textarea:focus{
     border: solid var(--main-color) 1px;
     outline: solid var(--main-color) 1px;
-    color: var(--light-black-color);
+    color: var(--text-color);
 }
 
 textarea{
@@ -281,10 +285,13 @@ input:-webkit-autofill {
 
 .imageDiv{
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    
 }
 
 .mainDiv{
     position: relative;
+    
 }
 
 .imgInput{
@@ -511,9 +518,7 @@ width: 100%;
         row-gap: 20px;
     }
 
-    .arrow{
-        top: 18px;
-    }
+ 
 
     .main{
         padding: 3%;
