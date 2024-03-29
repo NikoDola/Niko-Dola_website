@@ -12,26 +12,14 @@ function colorPicker(name, description, imagePath){
     const textDiv= document.createElement('div')
     const tittle = document.createElement('h3')
     const bodyText = document.createElement('p')
+    bodyText.className ='bodyText'
     tittle.textContent = name
-    tittle.style.marginTop= '10px'
+    tittle.className = 'tittlePicker'
     bodyText.textContent = description
 
-
-
-
-
-
     imageDiv.className = 'imageDiv'
-    imageDiv.style.position ='relative'
-    imageDiv.style.height = '165px'
-    imageDiv.style.width = '165px'
     imageDiv.style.backgroundImage = `url('${imagePath}')`
-    imageDiv.style.backgroundSize = 'cover'
-    imageDiv.style.boxSizing = ' border-box'
-    bodyText.style.width = '165px'
-    bodyText.style.marginLeft = '0'
-    bodyText.style.padding = '0'
-
+    
     let toggleCode5 = false
 
     imageDiv.addEventListener('click', function(){
@@ -57,6 +45,7 @@ function colorPicker(name, description, imagePath){
         }
         
     })
+
     checkMarkBg.appendChild(checkMark)
     imageDiv.appendChild(checkMarkBg)
     textDiv.appendChild(tittle)
@@ -64,7 +53,6 @@ function colorPicker(name, description, imagePath){
     mainDiv.appendChild(imageDiv)
     mainDiv.append(textDiv)
     picker.appendChild(mainDiv)
-
 }
 
 colorPicker('Reds', 'Energy, action, passion, and love', '/assets/colors/reds.jpg')
@@ -82,34 +70,37 @@ colorPicker('Designer_choice', 'Knowledge','/assets/colors/designer_choice.jpg')
 
 function imgPicker(name, description, imagePath){
     const picker = document.getElementById('imgPicker')
+
     const checkMark = document.createElement('div')
     checkMark.className = 'checkMark'
+
     const checkMarkBg = document.createElement('div')
     checkMarkBg.className = 'checkMarkBg'
+    
     const input = document.createElement('textarea')
     input.id = 'inspirationTextarea'
     input.className = 'imgInput'
     input.placeholder = 'you can leve a note here'
     
     const mainDiv = document.createElement('div')
+    mainDiv.className = 'mainDiv'
+
     const imageDiv = document.createElement('div')
+    imageDiv.className = 'imageDiv'
+    imageDiv.style.backgroundImage = `url('${imagePath}')`
+    
     const textDiv= document.createElement('div')
+    textDiv.className = 'textDiv'
+
     const tittle = document.createElement('h3')
-    const bodyText = document.createElement('p')
+    tittle.className = 'tittlePicker'
     tittle.textContent = name
     tittle.style.marginTop= '10px'
+
+    const bodyText = document.createElement('p')
+    bodyText.className ='bodyText'
     bodyText.textContent = description
-    bodyText.style.marginLeft='0'
-    mainDiv.className = 'mainDiv'
-   
-    imageDiv.className = 'imageDiv'
-    imageDiv.style.position ='relative'
-    imageDiv.style.height = '165px'
-    imageDiv.style.width = '165px'
-    imageDiv.style.backgroundImage = `url('${imagePath}')`
-    imageDiv.style.backgroundSize = 'cover'
-    imageDiv.style.boxSizing = ' border-box'
-    bodyText.style.width = '165px'
+    
     let toggleCode5 = false
     let selected = false
     
@@ -120,7 +111,6 @@ function imgPicker(name, description, imagePath){
             imageDiv.style.border = 'solid var(--main-color)'
             input.style.display = 'block'
             selected = true
-            
         }
 
         else if (toggleCode5){
@@ -129,45 +119,39 @@ function imgPicker(name, description, imagePath){
             imageDiv.style.border=''
             input.style.display = 'none'
             selected = false
-        }
+        }})
 
-   
-        
-    })
     submit.addEventListener('click', ()=>{
         if(selected){
             inspirationSet.add(` image ${name}, text: ${input.value}`)
-        }
-    })
+        }})
    
     checkMarkBg.appendChild(checkMark)
     imageDiv.appendChild(checkMarkBg)
-    
     textDiv.appendChild(tittle)
     textDiv.appendChild(bodyText)
     mainDiv.appendChild(imageDiv)
     mainDiv.appendChild(textDiv)
     mainDiv.appendChild(input)
     picker.appendChild(mainDiv)
-
 }
 
 const tag = {
-    Creative: 'Creative',
-    Musculer: 'Musculer',
-    Feminnen : 'Feminnen',
-    Minimal: 'Minimal',
-    Badge: 'Badge',
-    ThreeD: '3D',
-    Vintage: 'Vintage',
-    Character: 'Character',
-    Cartoonish: 'Cartoonish',
-    Playful: 'Playful',
-    Serious: 'Serious',
-    Geometric: 'Geometric',
-    Organic: 'Organic',
-    Abstract: 'Abstract',
-    Obvious: 'Obvious',
+    Creative: '#Creative',
+    Musculer: '#Musculer',
+    Feminnen : '#Feminnen',
+    Minimal: '#Minimal',
+    Badge: '#Badge',
+    ThreeD: '#3D',
+    Vintage: '#Vintage',
+    Character: '#Character',
+    Cartoonish: '#Cartoonish',
+    Playful: '#Playful',
+    Serious: '#Serious',
+    Geometric: '#Geometric',
+    Organic: '#Organic',
+    Abstract: '#Abstract',
+    Obvious: '#Obvious',
 }
 
 imgPicker('BEE - 3D', `${tag.Creative} ${tag.Playful} ${tag.ThreeD}`, '/assets/inspiration_Images/logo_bee-3d.png');
