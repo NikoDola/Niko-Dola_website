@@ -500,6 +500,10 @@ width: 100%;
 }
 
 @media (max-width: 770px) {
+    #contactBrief{
+      
+        flex-direction: column;
+    }
 
     .bradaKosa{
         position: absolute;
