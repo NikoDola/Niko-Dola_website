@@ -157,7 +157,7 @@ const tag = {
     Monogram: '#Monogram',
     LogoType: '#LogoType',
     Detailed: 'Detailed',
-    Sophisticated:'Sophisticated'
+    Sophisticated:'#Sophisticated'
 }
 
 

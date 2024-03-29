@@ -131,7 +131,7 @@ button:hover{
     box-sizing: border-box;
     padding-right: 100px;
     padding-left: 100px;
-    margin-top: 30px;
+    margin-top: 5%;
     overflow: hidden;
 }
 
@@ -160,6 +160,16 @@ button:hover{
     width: 100%;
     height: 70px;
     border-radius: 1rem;
+    background-color: var(--light-black-color);
+    transition: outline 0.3s, height 1s;
+}
+
+#submitPopUp, #submitPopUp2{
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: green
 }
 
 .singleSocial{
@@ -178,10 +188,7 @@ button:hover{
     visibility:visible;
 }
 
-.button{
-    background-color: var(--light-black-color);
-    transition: outline 0.3s, height 1s;
-}
+
 #buttonCode3{
     transition: 0.4s;
 }
@@ -489,6 +496,7 @@ width: 100%;
     margin-bottom: 20px;
 }
 
+
 @media (max-width: 1024px){
     #colorPicker, #imgPicker{
         display: grid;
@@ -501,7 +509,6 @@ width: 100%;
 
 @media (max-width: 770px) {
     #contactBrief{
-      
         flex-direction: column;
     }
 
@@ -541,6 +548,7 @@ width: 100%;
     .main{
         padding: 3%;
         overflow-x: hidden;
+        margin-top: 2%;
     }
 
     .button{

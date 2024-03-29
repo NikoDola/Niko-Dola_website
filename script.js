@@ -31,7 +31,7 @@ secretButtonCode1.addEventListener('click', ()=>{
     if (!toggleCode1){
         contentCode1.style.display = 'block';
         const contentHeight = contentCode1.scrollHeight;
-        buttonCode1.style.height = contentHeight + 100 + 'px';
+        buttonCode1.style.height = contentHeight + 130 + 'px';
         arrowCode1.style.transform = 'rotate(90deg)';
         toggleCode1 = true;
         contentCode1.style.visibility = 'visible';
@@ -59,7 +59,7 @@ secretButtonCode2.addEventListener('click', () => {
         contentCode2.style.display = 'block';
         contentCode2.style.visibility = 'visible';
         const contentHeight = contentCode2.scrollHeight;
-        buttonCode2.style.height = contentHeight + 100 + 'px';
+        buttonCode2.style.height = contentHeight + 130 + 'px';
         arrowCode2.style.transform = 'rotate(90deg)';
         toggleCode2 = true;
         contentCode2.style.opacity = '1';
@@ -163,6 +163,8 @@ const hasNotInput = document.getElementById('hasNot');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 
+const submitPopUp = document.getElementById('submitPopUp')
+const submitPopUp2 = document.getElementById('submitPopUp2')
 
 
 
@@ -182,7 +184,7 @@ function ContactEmail(){
         Body : `Message: ${contactMessage.value}, 
         Email: ${contactEmail.value}, Name: ${contactName.value}`
     }).then(
-        () => alert('Message has been sent!')
+        submitPopUp2.style.display = 'block'
     );
 };
 
@@ -205,30 +207,16 @@ function LogoEmail(){
         emailjs.send("service_3r25scb", "template_7m9enxl", params)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
-                alert('Email sent successfully');
+                submitPopUp.style.display = 'block';
             }, function(error) {
                 console.log('FAILED...', error);
-                alert('Failed to send email: ' + error);
+                submitPopUp.textContent = `Fail to send message because of ${error}`
+                submitPopUp.style.color = 'red'
+                submitPopUp.style.display = 'block';
+                
             });
 
 
-    // Email.send({
-    //     Host : "smtp.elasticemail.com",
-    //     Username : "nikodola@gmail.com",
-    //     Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
-    //     To : 'dolovska@hotmail.com',
-    //     From : "nikodola@gmail.com",
-    //     Subject : "LogoOrder",
-    //     Body : 
-    //     `Name: ${nameInput.value}<br><br>
-    //      Email: ${emailInput.value}<br><br>
-    //     I would like to see in the logo: ${hasInput.value}<br><br>
-    //     I do not like to have: ${hasNotInput.value}<br><br>
-    //     colors that i like are: ${colorAray}<br><br>
-    //     inspiration images: ${inspirationAray}`
-    // }).then(
-    //   () => alert('Message has been sent!')
-    // );
 }
 
 
