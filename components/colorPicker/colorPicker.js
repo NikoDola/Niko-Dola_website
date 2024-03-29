@@ -152,19 +152,22 @@ const tag = {
     Organic: '#Organic',
     Abstract: '#Abstract',
     Obvious: '#Obvious',
+    Monogram: '#Monogram',
+    LogoType: '#LogoTypoe',
+    Detailed: 'Detailed'
 }
 
 imgPicker('BEE - 3D', `${tag.Creative} ${tag.Playful} ${tag.ThreeD}`, '/assets/inspiration_Images/logo_bee-3d.png');
 imgPicker('Banana', `${tag.Creative} ${tag.Playful} ${tag.Cartoonish}`, '/assets/inspiration_Images/logo_banana.png');
-imgPicker('8b', `${tag.Minimal} ${tag.Playful}`, '/assets/inspiration_Images/logo_8b.png');
+imgPicker('8b', `${tag.Minimal} ${tag.Playful} ${tag.Monogram}`, '/assets/inspiration_Images/logo_8b.png');
 imgPicker('Astronaut beer', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_Astronaut_beer.png');
 imgPicker('Bear', `${tag.Minimal} ${tag.Character} ${tag.Creative}`, '/assets/inspiration_Images/logo_bear.png');
-imgPicker('B" bee', `${tag.Minimal} ${tag.Creative}`, '/assets/inspiration_Images/logo_bee.png');
-imgPicker('BH', `${tag.Playful} ${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_BH.png');
+imgPicker('B" bee', `${tag.Creative} ${tag.Minimal} ${tag.Creative}`, '/assets/inspiration_Images/logo_bee.png');
+imgPicker('BH', `${tag.Monogram} ${tag.Playful} ${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_BH.png');
 imgPicker('Blossoms', `${tag.Playful} ${tag.Feminnen}`, '/assets/inspiration_Images/logo_blossoms.png');
 imgPicker('Burger', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_Burger.png');
-imgPicker('Camaleon', `${tag.Creative}`, '/assets/inspiration_Images/logo_camaleon.png');
-imgPicker('Celestial Snax', `${tag.Playful} ${tag.Vintage}`, '/assets/inspiration_Images/logo_celestial-snax.png');
+imgPicker('Camaleon', ` ${tag.LogoType} ${tag.LogoType}`, '/assets/inspiration_Images/logo_camaleon.png');
+imgPicker('Celestial Snax', ` ${tag.Creative}${tag.Playful} ${tag.Vintage}`, '/assets/inspiration_Images/logo_celestial-snax.png');
 imgPicker('Cherry House', `${tag.Creative} ${tag.Minimal} ${tag.Playful}`, '/assets/inspiration_Images/logo_cherry-house.png');
 imgPicker('Dracula', `${tag.Musculer} ${tag.Badge}`, '/assets/inspiration_Images/logo_Dracula.png');
 imgPicker('Eco Light', `${tag.Minimal} ${tag.Creative} ${tag.Cartoonish}`, '/assets/inspiration_Images/logo_ecolight.png');
@@ -172,29 +175,29 @@ imgPicker('Game Over', `${tag.Creative} ${tag.Cartoonish}`, '/assets/inspiration
 imgPicker('Flo', `${tag.Badge} ${tag.Cartoonish} ${tag.Musculer}`, '/assets/inspiration_Images/logo_flo.png');
 imgPicker('Grifin', `${tag.Minimal} ${tag.Geometric}`, '/assets/inspiration_Images/logo_grifin.png');
 imgPicker('Hot Dog', `${tag.Cartoonish} ${tag.Character}`, '/assets/inspiration_Images/logo_hotdog-character.png');
-imgPicker('Iko Media', `${tag.Geometric}`, '/assets/inspiration_Images/logo_iko-media.png');
+imgPicker('Iko Media', `${tag.Geometric}  ${tag.Monogram}`, '/assets/inspiration_Images/logo_iko-media.png');
 imgPicker('Juicy World', `${tag.Cartoonish} ${tag.Playful}`, '/assets/inspiration_Images/logo_juicy-world.png');
 imgPicker('Lemonade', `${tag.Cartoonish} ${tag.Playful} ${tag.Badge}`, '/assets/inspiration_Images/logo_lemonade.png');
 imgPicker('Lion', `${tag.Musculer} ${tag.Geometric} ${tag.Serious}`, '/assets/inspiration_Images/logo_Lion.png');
 imgPicker('Love', `${tag.Playful} ${tag.Minimal}`, '/assets/inspiration_Images/logo_love.png');
-imgPicker('Mig', `${tag.Sophisticated}`, '/assets/inspiration_Images/logo_mig.png');
+imgPicker('Mig', `${tag.Sophisticated} ${tag.LogoType}`, '/assets/inspiration_Images/logo_mig.png');
 imgPicker('Most Valuable Artist', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_most-valuable.png');
-imgPicker('Optimal Fitness', `${tag.Character} ${tag.Musculer}`, '/assets/inspiration_Images/logo_optimal-fitness.png');
-imgPicker('Orca', `8bForm`, '/assets/inspiration_Images/logo_orca.png');
-imgPicker('Puppy Bone', `8bForm`, '/assets/inspiration_Images/logo_puppy-bone.png');
-imgPicker('Rabbit', `8bForm`, '/assets/inspiration_Images/logo_Rabbit.png');
-imgPicker('Rocket', `8bForm`, '/assets/inspiration_Images/logo_rocket-minimal.png');
-imgPicker('Rose Wine', `${tag.Feminnen} ${tag.Creative} ${tag.Badge}`, '/assets/inspiration_Images/logo_rose-wine.png');
-imgPicker('Safe Home', `${tag.Creative} ${tag.Minimal} ${tag.Playful}`, '/assets/inspiration_Images/logo_safe-home.png');
-imgPicker('Skyfilms', `${tag.Minimal} ${tag.Creative} ${tag.Playful}`, '/assets/inspiration_Images/logo_skyfilms.png');
+imgPicker('Optimal Fitness', `${tag.Character} ${tag.Musculer} ${tag.Cartoonish}`, '/assets/inspiration_Images/logo_optimal-fitness.png');
+imgPicker('Orca', `${tag.Minimal} ${tag.ge} ${tag.Vintage}`, '/assets/inspiration_Images/logo_orca.png');
+imgPicker('Puppy Bone', `${tag.Creative} ${tag.Minimal} ${tag.Geometric}`, '/assets/inspiration_Images/logo_puppy-bone.png');
+imgPicker('Rabbit', ` ${tag.Geometric} ${tag.Minimal} `, '/assets/inspiration_Images/logo_Rabbit.png');
+imgPicker('Rocket', `${tag.Minimal} ${tag.Geometric}`, '/assets/inspiration_Images/logo_rocket-minimal.png');
+imgPicker('Rose Wine', `${tag.Feminnen} ${tag.Creative} ${tag.Badge} ${tag.Geometric}`, '/assets/inspiration_Images/logo_rose-wine.png');
+imgPicker('Safe Home', `${tag.Creative} ${tag.Minimal} ${tag.Playful} ${tag.Geometric}`, '/assets/inspiration_Images/logo_safe-home.png');
+imgPicker('Skyfilms', `${tag.Minimal} ${tag.Creative} ${tag.Geometric} ${tag.Playful}`, '/assets/inspiration_Images/logo_skyfilms.png');
 imgPicker('Space Donut', `${tag.Cartoonish} ${tag.Creative} ${tag.Badge}`, '/assets/inspiration_Images/logo_space-donut.png');
-imgPicker('swaney', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_swaney.png');
+imgPicker('swaney', `${tag.Vintage} ${tag.Badge} ${tag.Detailed}`, '/assets/inspiration_Images/logo_swaney.png');
 imgPicker('synnove', `${tag.Creative} ${tag.Playful}`, '/assets/inspiration_Images/logo_synnove.png');
-imgPicker('TAGS', `${tag.Cartoonish} ${tag.Badge} ${tag.Playful}`, '/assets/inspiration_Images/logo_tags.png');
-imgPicker('TM', `${tag.Minimal} ${tag.Creative}`, '/assets/inspiration_Images/logo_TM.png');
+imgPicker('TAGS', `${tag.Cartoonish} ${tag.Badge} ${tag.Playful} ${tag.Detailed}`, '/assets/inspiration_Images/logo_tags.png');
+imgPicker('TM', `${tag.Minimal} ${tag.Creative} ${tag.Monogram}`, '/assets/inspiration_Images/logo_TM.png');
 imgPicker('Unihorn', `${tag.Cartoonish} ${tag.Musculer}`, '/assets/inspiration_Images/logo_Unihorn.png');
-imgPicker('Squirrel nut', `${tag.Creative} ${tag.Minimal}`, '/assets/inspiration_Images/logo_ververicka.png');
+imgPicker('Squirrel nut', `${tag.Creative} ${tag.Minimal} ${tag.Geometric}`, '/assets/inspiration_Images/logo_ververicka.png');
 imgPicker('Visionary', `${tag.ThreeD} ${tag.Playful} ${tag.Sophisticated}`, '/assets/inspiration_Images/logo_visionary.png');
-imgPicker('Walk', `${tag.Creative} ${tag.Minimal}`, '/assets/inspiration_Images/logo_walk.png');
+imgPicker('Walk', `${tag.LogoType} ${tag.Creative} ${tag.Minimal}`, '/assets/inspiration_Images/logo_walk.png');
 
 
