@@ -152,48 +152,65 @@ function imgPicker(name, description, imagePath){
 
 }
 
+const tag = {
+    Creative: 'Creative',
+    Musculer: 'Musculer',
+    Feminnen : 'Feminnen',
+    Minimal: 'Minimal',
+    Badge: 'Badge',
+    ThreeD: '3D',
+    Vintage: 'Vintage',
+    Character: 'Character',
+    Cartoonish: 'Cartoonish',
+    Playful: 'Playful',
+    Serious: 'Serious',
+    Geometric: 'Geometric',
+    Organic: 'Organic',
+    Abstract: 'Abstract',
+    Obvious: 'Obvious',
+}
 
-imgPicker( '8b', '8bForm', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( 'BEE - 3D', '#Creative #Playful  #Modern #3d', '/assets/inspiration_Images/logo_bee-3d.png')
-imgPicker( 'Banana', '#Creative #Playful #Cartoonish, #youthful', '/assets/inspiration_Images/logo_banana.png')
-imgPicker( '8b', '#Monogram, #classic, #minimal, #playful', '/assets/inspiration_Images/logo_8b.png')
-imgPicker( 'Astronaut beer', '#vintage #Badge #classic #HandDrawing', '/assets/inspiration_Images/logo_Astronaut_beer.png')
-imgPicker( 'Bear', '#Character, #Creative', '/assets/inspiration_Images/logo_bear.png')
-imgPicker( 'B" bee', '8bForm', '/assets/inspiration_Images/logo_bee.png')
-imgPicker( 'BH', '8bForm', '/assets/inspiration_Images/logo_BH.png')
-imgPicker( 'Blossoms', '8bForm', '/assets/inspiration_Images/logo_blossoms.png')
-imgPicker( 'Burger', '8bForm', '/assets/inspiration_Images/logo_Burger.png')
-imgPicker( 'Camaleon', '8bForm', '/assets/inspiration_Images/logo_camaleon.png')
-imgPicker( 'Celestial Snax', '8bForm', '/assets/inspiration_Images/logo_celestial-snax.png')
-imgPicker( 'Cherry House', '8bForm', '/assets/inspiration_Images/logo_cherry-house.png')
-imgPicker( 'Dracula', '8bForm', '/assets/inspiration_Images/logo_Dracula.png')
-imgPicker( 'Eco Light', '8bForm', '/assets/inspiration_Images/logo_ecolight.png')
-imgPicker( 'Game Over', '8bForm', '/assets/inspiration_Images/logo_game-over.png')
-imgPicker( 'Flo', '8bForm', '/assets/inspiration_Images/logo_flo.png')
-imgPicker( 'Grifin', '8bForm', '/assets/inspiration_Images/logo_grifin.png')
-imgPicker( 'Hot Dog', '8bForm', '/assets/inspiration_Images/logo_hotdog-character.png')
-imgPicker( 'Iko Media', '8bForm', '/assets/inspiration_Images/logo_iko-media.png')
-imgPicker( 'Juicy World', '8bForm', '/assets/inspiration_Images/logo_juicy-world.png')
-imgPicker( 'Lemonade', '8bForm', '/assets/inspiration_Images/logo_lemonade.png')
-imgPicker( 'Lion', '8bForm', '/assets/inspiration_Images/logo_Lion.png')
-imgPicker( 'Love', '8bForm', '/assets/inspiration_Images/logo_love.png')
-imgPicker( 'Mig', '8bForm', '/assets/inspiration_Images/logo_mig.png')
-imgPicker( 'Most Valuable Artist', '8bForm', '/assets/inspiration_Images/logo_most-valuable.png')
-imgPicker( 'Optimal Fitness', '8bForm', '/assets/inspiration_Images/logo_optimal-fitness.png')
-imgPicker( 'Orca', '8bForm', '/assets/inspiration_Images/logo_orca.png')
-imgPicker( 'Puppy Bone', '8bForm', '/assets/inspiration_Images/logo_puppy-bone.png')
-imgPicker( 'Rabbit', '8bForm', '/assets/inspiration_Images/logo_Rabbit.png')
-imgPicker( 'Rocket', '8bForm', '/assets/inspiration_Images/logo_rocket-minimal.png')
-imgPicker( 'Rose Wine', '8bForm', '/assets/inspiration_Images/logo_rose-wine.png')
-imgPicker( 'Safe Home', '8bForm', '/assets/inspiration_Images/logo_safe-home.png')
-imgPicker( 'Skyfilms', '8bForm', '/assets/inspiration_Images/logo_skyfilms.png')
-imgPicker( 'Space Donut', '8bForm', '/assets/inspiration_Images/logo_space-donut.png')
-imgPicker( 'swaney', '8bForm', '/assets/inspiration_Images/logo_swaney.png')
-imgPicker( 'synnove', '8bForm', '/assets/inspiration_Images/logo_synnove.png')
-imgPicker( 'TAGS', '8bForm', '/assets/inspiration_Images/logo_tags.png')
-imgPicker( 'TM', '8bForm', '/assets/inspiration_Images/logo_TM.png')
-imgPicker( 'Unihorn', '8bForm', '/assets/inspiration_Images/logo_Unihorn.png')
-imgPicker( 'Squirrel nut', '8bForm', '/assets/inspiration_Images/logo_ververicka.png')
-imgPicker( 'Visionary', '8bForm', '/assets/inspiration_Images/logo_visionary.png')
-imgPicker( 'Walk', '8bForm', '/assets/inspiration_Images/logo_walk.png')
+imgPicker('BEE - 3D', `${tag.Creative} ${tag.Playful} ${tag.ThreeD}`, '/assets/inspiration_Images/logo_bee-3d.png');
+imgPicker('Banana', `${tag.Creative} ${tag.Playful} ${tag.Cartoonish}`, '/assets/inspiration_Images/logo_banana.png');
+imgPicker('8b', `${tag.Minimal} ${tag.Playful}`, '/assets/inspiration_Images/logo_8b.png');
+imgPicker('Astronaut beer', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_Astronaut_beer.png');
+imgPicker('Bear', `${tag.Minimal} ${tag.Character} ${tag.Creative}`, '/assets/inspiration_Images/logo_bear.png');
+imgPicker('B" bee', `${tag.Minimal} ${tag.Creative}`, '/assets/inspiration_Images/logo_bee.png');
+imgPicker('BH', `${tag.Playful} ${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_BH.png');
+imgPicker('Blossoms', `${tag.Playful} ${tag.Feminnen}`, '/assets/inspiration_Images/logo_blossoms.png');
+imgPicker('Burger', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_Burger.png');
+imgPicker('Camaleon', `${tag.Creative}`, '/assets/inspiration_Images/logo_camaleon.png');
+imgPicker('Celestial Snax', `${tag.Playful} ${tag.Vintage}`, '/assets/inspiration_Images/logo_celestial-snax.png');
+imgPicker('Cherry House', `${tag.Creative} ${tag.Minimal} ${tag.Playful}`, '/assets/inspiration_Images/logo_cherry-house.png');
+imgPicker('Dracula', `${tag.Musculer} ${tag.Badge}`, '/assets/inspiration_Images/logo_Dracula.png');
+imgPicker('Eco Light', `${tag.Minimal} ${tag.Creative} ${tag.Cartoonish}`, '/assets/inspiration_Images/logo_ecolight.png');
+imgPicker('Game Over', `${tag.Creative} ${tag.Cartoonish}`, '/assets/inspiration_Images/logo_game-over.png');
+imgPicker('Flo', `${tag.Badge} ${tag.Cartoonish} ${tag.Musculer}`, '/assets/inspiration_Images/logo_flo.png');
+imgPicker('Grifin', `${tag.Minimal} ${tag.Geometric}`, '/assets/inspiration_Images/logo_grifin.png');
+imgPicker('Hot Dog', `${tag.Cartoonish} ${tag.Character}`, '/assets/inspiration_Images/logo_hotdog-character.png');
+imgPicker('Iko Media', `${tag.Geometric}`, '/assets/inspiration_Images/logo_iko-media.png');
+imgPicker('Juicy World', `${tag.Cartoonish} ${tag.Playful}`, '/assets/inspiration_Images/logo_juicy-world.png');
+imgPicker('Lemonade', `${tag.Cartoonish} ${tag.Playful} ${tag.Badge}`, '/assets/inspiration_Images/logo_lemonade.png');
+imgPicker('Lion', `${tag.Musculer} ${tag.Geometric} ${tag.Serious}`, '/assets/inspiration_Images/logo_Lion.png');
+imgPicker('Love', `${tag.Playful} ${tag.Minimal}`, '/assets/inspiration_Images/logo_love.png');
+imgPicker('Mig', `${tag.Sophisticated}`, '/assets/inspiration_Images/logo_mig.png');
+imgPicker('Most Valuable Artist', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_most-valuable.png');
+imgPicker('Optimal Fitness', `${tag.Character} ${tag.Musculer}`, '/assets/inspiration_Images/logo_optimal-fitness.png');
+imgPicker('Orca', `8bForm`, '/assets/inspiration_Images/logo_orca.png');
+imgPicker('Puppy Bone', `8bForm`, '/assets/inspiration_Images/logo_puppy-bone.png');
+imgPicker('Rabbit', `8bForm`, '/assets/inspiration_Images/logo_Rabbit.png');
+imgPicker('Rocket', `8bForm`, '/assets/inspiration_Images/logo_rocket-minimal.png');
+imgPicker('Rose Wine', `${tag.Feminnen} ${tag.Creative} ${tag.Badge}`, '/assets/inspiration_Images/logo_rose-wine.png');
+imgPicker('Safe Home', `${tag.Creative} ${tag.Minimal} ${tag.Playful}`, '/assets/inspiration_Images/logo_safe-home.png');
+imgPicker('Skyfilms', `${tag.Minimal} ${tag.Creative} ${tag.Playful}`, '/assets/inspiration_Images/logo_skyfilms.png');
+imgPicker('Space Donut', `${tag.Cartoonish} ${tag.Creative} ${tag.Badge}`, '/assets/inspiration_Images/logo_space-donut.png');
+imgPicker('swaney', `${tag.Vintage} ${tag.Badge}`, '/assets/inspiration_Images/logo_swaney.png');
+imgPicker('synnove', `${tag.Creative} ${tag.Playful}`, '/assets/inspiration_Images/logo_synnove.png');
+imgPicker('TAGS', `${tag.Cartoonish} ${tag.Badge} ${tag.Playful}`, '/assets/inspiration_Images/logo_tags.png');
+imgPicker('TM', `${tag.Minimal} ${tag.Creative}`, '/assets/inspiration_Images/logo_TM.png');
+imgPicker('Unihorn', `${tag.Cartoonish} ${tag.Musculer}`, '/assets/inspiration_Images/logo_Unihorn.png');
+imgPicker('Squirrel nut', `${tag.Creative} ${tag.Minimal}`, '/assets/inspiration_Images/logo_ververicka.png');
+imgPicker('Visionary', `${tag.ThreeD} ${tag.Playful} ${tag.Sophisticated}`, '/assets/inspiration_Images/logo_visionary.png');
+imgPicker('Walk', `${tag.Creative} ${tag.Minimal}`, '/assets/inspiration_Images/logo_walk.png');
+
 
