@@ -106,12 +106,7 @@ button:hover{
     width: 80px;
 }
 
-#imgCode1 {
-    margin-top: 50px;
-    height: 500px;
-    background-image: url('assets/images_of-me/picture_me1.jpg');
-    background-size: cover;
-}
+
 
 #imgCode2 {
     height: 500px;
@@ -290,7 +285,14 @@ input:-webkit-autofill {
     row-gap: 20px;
 }
 
-
+.sliki{
+    position: relative;
+    height: 50%;
+    width: 60%;
+    left: 50%;
+    border-radius: 100% 100% 0 0;
+    transform: translateX(-50%);
+}
 
 
 .imageDiv{
@@ -330,6 +332,7 @@ input:-webkit-autofill {
     height: 60px;
     display: none;
     width: 165px;
+    border-radius: 0;
 }
 
 .checkMark{
@@ -584,6 +587,11 @@ width: 100%;
 }
 
 @media (max-width: 420px) {
+
+    .imageDiv{
+        height: 120px;
+        width: 120px;
+    }
     h1 {
         font-size: 30px;
     }
