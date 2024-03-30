@@ -590,16 +590,8 @@ width: 100%;
 .mainButtonTextCode2{
     text-align: center;
 }
-    #colorPicker, #imgPicker{
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-gap: 3px; 
-        row-gap: 6px;
-    }
-    .imageDiv{
-        height: 120px;
-        width: 120px;
-    }
+
+
     h1 {
         font-size: 25px;
     }
