@@ -588,12 +588,18 @@ width: 100%;
 
 @media (max-width: 420px) {
 
+    #colorPicker, #imgPicker{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Three columns with equal width */
+        grid-gap: 10px; /* Gap between grid items */
+        row-gap: 6px;
+    }
     .imageDiv{
         height: 120px;
         width: 120px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .main{
         padding-right: 3%;
