@@ -587,11 +587,13 @@ width: 100%;
 }
 
 @media (max-width: 420px) {
-
+.mainButtonTextCode2{
+    text-align: center;
+}
     #colorPicker, #imgPicker{
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Three columns with equal width */
-        grid-gap: 10px; /* Gap between grid items */
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 3px; 
         row-gap: 6px;
     }
     .imageDiv{
