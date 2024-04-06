@@ -65,7 +65,6 @@ secretButtonCode2.addEventListener('click', () => {
         contentCode2.style.opacity = '1';
         contentCode2.style.transition = '2s ease-out';
     } else {
-        buttonCode2.style.height = ''; // Reset height to default (auto)
         buttonCode2.style.height = '';
         toggleCode2 = false;
         arrowCode2.style.transform = '';

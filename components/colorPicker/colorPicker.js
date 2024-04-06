@@ -91,14 +91,12 @@ submitColor.addEventListener('click', (e) => {
     creatingColor.appendChild(creatingTextColor);
     colorAdding.appendChild(creatingColor);
     
-    const customColorDivHeight = creatingColor.scrollHeight; // Height of the newly added color element
-    const currentHeight = buttonCode2.offsetHeight; // Use offsetHeight if you're setting height explicitly
-    buttonCode2.style.height = `${currentHeight + customColorDivHeight - 40}px`; // Increase button height
+    buttonCode2.style.height = `${buttonCode2.scrollHeight + 30}px`; // Increase button height
 
     creatingX.addEventListener('click', () => {
         colorAdding.removeChild(creatingColor);
         colorSet.delete(colorTextInput.value);
-        buttonCode2.style.height = `${buttonCode2.offsetHeight - customColorDivHeight }px`;
+        
     });
 });
 colorInput.addEventListener('input', () => {
