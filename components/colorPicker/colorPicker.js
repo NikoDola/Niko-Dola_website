@@ -65,7 +65,60 @@ colorPicker('Purples','Knowledge', '/assets/colors/purples.jpg')
 colorPicker('Greens', 'Knowledge','/assets/colors/greens.jpg')
 colorPicker('Designer_choice', 'Knowledge','/assets/colors/designer_choice.jpg')
 
+const colorAdding = document.querySelector('.colorAdding')
+const customColorDiv = document.querySelector('.custom-color-div')
+const colorInput = document.querySelector('.color-input');
+const colorTextInput = document.querySelector('.color-text-input');
+const submitColor = document.querySelector('.submit-color')
 
+
+const contentHeight = contentCode2.scrollHeight  + colorAdding.scrollHeight;
+
+setInterval(() => {
+    console.log(colorAdding.scrollHeigh)
+}, 1000);
+
+submitColor.addEventListener('click', (e)=>{
+    e.preventDefault()
+    const creatingColor = document.createElement('div')
+    creatingColor.id = 'creatingColor'
+    const creatingTextColor = document.createElement('p')
+    creatingTextColor.id = 'creatingTextColor'
+
+    const creatingX = document.createElement('p')
+    creatingX.id = 'creatingX' 
+    creatingX.textContent = 'x' 
+    creatingTextColor.textContent = colorInput.value
+    creatingColor.style.background = colorTextInput.value
+    colorSet.add(colorTextInput.value)
+    creatingX.addEventListener('click', ()=>{
+        colorAdding.removeChild(creatingColor)
+        colorAdding.remove(colorTextInput.value)
+    })
+    creatingColor.appendChild(creatingX)
+    creatingColor.appendChild(creatingTextColor)
+    colorAdding.appendChild(creatingColor)
+    
+})
+// Update text input when color input changes
+colorInput.addEventListener('input', () => {
+    colorTextInput.value = colorInput.value;
+});
+
+// Update color input when text input changes, accommodating hex codes without '#'
+colorTextInput.addEventListener('input', () => {
+    let val = colorTextInput.value;
+    // Prepend '#' if it's missing
+    if (!val.startsWith('#')) {
+        val = '#' + val;
+    }
+    // Validate the possibly adjusted hex code
+    if (/^#[0-9A-F]{6}$/i.test(val)) {
+        colorInput.value = val;
+        colorTextInput.value = val; // Update the text input in case '#' was added
+    }
+});
+const currentColor = document.querySelector('.current-color');
 
 
 function imgPicker(name, description, imagePath){

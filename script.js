@@ -15,7 +15,6 @@ const secretButtonCode2 = document.getElementById('secretButtonCode2');
 const secretButtonCode3 = document.getElementById('secretButtonCode3');
 
 
-
 const submit = document.getElementById('submit');
 
 const formSet = new Set();
@@ -49,17 +48,18 @@ secretButtonCode1.addEventListener('click', ()=>{
     }
 });
 
-const contentHeight = contentCode2.scrollHeight;
+
 
 // Button 2
 let toggleCode2 = false;
+
 
 secretButtonCode2.addEventListener('click', () => {
     if (!toggleCode2) {
         contentCode2.style.display = 'block';
         contentCode2.style.visibility = 'visible';
         const contentHeight = contentCode2.scrollHeight;
-        buttonCode2.style.height = contentHeight + 130 + 'px';
+        buttonCode2.style.height = contentHeight + 130  + 'px';
         arrowCode2.style.transform = 'rotate(90deg)';
         toggleCode2 = true;
         contentCode2.style.opacity = '1';

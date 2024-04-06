@@ -108,11 +108,11 @@ button:hover{
 
 
 
-#imgCode2 {
-    height: 500px;
-    background-image: url('assets/images_of-me/ohlela_logo-design.jpg');
-    background-size: cover;
-    background-position: center;
+.image-of-me {
+    position: relative;
+    left: 50%;
+    max-width: 450px;
+    transform: translate(-50%);
 }
 
 .main{
@@ -285,6 +285,63 @@ input:-webkit-autofill {
     row-gap: 20px;
 }
 
+.formCustomColor{
+    display: flex;
+}
+
+
+.color-input{
+    outline: none;
+    border: none;
+    background-color: var(--light-black-color);
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.color-text-input{
+    max-width: 200px;
+    max-height: 40px;
+}
+
+#creatingColor{
+    position: relative;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    border: solid var(--main-color);
+}
+
+#creatingTextColor{
+    display: inline;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    color: gray;
+
+}
+
+#creatingX{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.colorAdding{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 15px;
+    row-gap: 15px;
+    
+}
 .sliki{
     position: relative;
     height: 50%;
@@ -294,6 +351,9 @@ input:-webkit-autofill {
     transform: translateX(-50%);
 }
 
+.submit-color{
+    width: 30%;
+}
 
 .imageDiv{
     position: relative;
