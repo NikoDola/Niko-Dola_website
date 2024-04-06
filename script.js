@@ -49,9 +49,9 @@ secretButtonCode1.addEventListener('click', ()=>{
 });
 
 
-
 // Button 2
 let toggleCode2 = false;
+
 
 
 secretButtonCode2.addEventListener('click', () => {
@@ -59,7 +59,7 @@ secretButtonCode2.addEventListener('click', () => {
         contentCode2.style.display = 'block';
         contentCode2.style.visibility = 'visible';
         const contentHeight = contentCode2.scrollHeight;
-        buttonCode2.style.height = contentHeight + 130  + 'px';
+        buttonCode2.style.height = contentHeight + 100 + 'px';
         arrowCode2.style.transform = 'rotate(90deg)';
         toggleCode2 = true;
         contentCode2.style.opacity = '1';
