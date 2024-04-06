@@ -577,7 +577,11 @@ width: 100%;
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 700px) {
+    .creatingColor{
+        width: 90px;
+        height: 50px;
+    }
     .colorAdding{
         grid-template-columns: repeat(3,1fr);
     }
@@ -658,6 +662,11 @@ width: 100%;
 }
 
 @media (max-width: 420px) {
+    
+.creatingColor{
+    width: 75px;
+    height: 50px;
+}
 .mainButtonTextCode2{
     text-align: center;
 }
