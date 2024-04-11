@@ -112,6 +112,23 @@ button:hover{
     left: 50%;
     max-width: 450px;
     transform: translate(-50%);
+    z-index: 3;
+    top: 80px;
+}
+.image-background {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to top, rgba(13,36,51,0) 0%, rgb(136,209,212,1) 100%);
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50% 50% 0 0;
+}
+
+.about-body-text{
+    margin-top: 100px;
 }
 
 .main{
