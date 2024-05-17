@@ -1,0 +1,96 @@
+*{
+    text-align: center;
+}
+
+.header{
+    margin: 0 auto;
+}
+
+.title{
+    margin: 0 auto;
+    width: 60%;
+    
+}
+
+.image__logo{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.main__blog{
+    margin: 0 auto;
+    margin-top: 5rem;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__blog * {
+    padding: 1rem ;
+}
+
+.day, .days, .logo__design {
+    color: aqua;
+    font-size: 45px;
+    line-height: 20px;
+    margin-top: 30px
+}
+.days{
+    margin: 0;
+}
+.challenge{
+    text-align: center;
+}
+
+.hashtags{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.the{
+    margin-top: 5%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.free{
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+}
+
+.email__contact{
+    color: aqua;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+}
+
+.company__name{
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hashtags, .image__logo, .title, .header{
+        width: 90%;
+    }
+}
+
+
+
+#contact {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+    margin: 0; /* Ensure no margin is added */
+    padding: 0; /* Ensure no padding is added */
+    display: inline; /* Ensure the element is inline */
+}

@@ -25,28 +25,28 @@ logoChangeColors();
 const colorData = colorInfo.textContent = colorSet;
 
 // Button 1
-let toggleCode1 = false;
-secretButtonCode1.addEventListener('click', ()=>{
-    if (!toggleCode1){
-        contentCode1.style.display = 'block';
-        const contentHeight = contentCode1.scrollHeight;
-        buttonCode1.style.height = contentHeight + 130 + 'px';
-        arrowCode1.style.transform = 'rotate(90deg)';
-        toggleCode1 = true;
-        contentCode1.style.visibility = 'visible';
-        contentCode1.style.opacity = '1';
-        contentCode1.style.transition = '1s ease-out';
-    }
-    else{
-        buttonCode1.style.height = ''
-        toggleCode1 = false
-        arrowCode1.style.transform = ''
-        contentCode1.style.display = ''
-        contentCode1.style.visibility = ''
-        contentCode1.style.opacity = ''
-        contentCode1.style.transition = '0.5s'
-    }
-});
+// let toggleCode1 = false;
+// secretButtonCode1.addEventListener('click', ()=>{
+//     if (!toggleCode1){
+//         contentCode1.style.display = 'block';
+//         const contentHeight = contentCode1.scrollHeight;
+//         buttonCode1.style.height = contentHeight + 130 + 'px';
+//         arrowCode1.style.transform = 'rotate(90deg)';
+//         toggleCode1 = true;
+//         contentCode1.style.visibility = 'visible';
+//         contentCode1.style.opacity = '1';
+//         contentCode1.style.transition = '1s ease-out';
+//     }
+//     else{
+//         buttonCode1.style.height = ''
+//         toggleCode1 = false
+//         arrowCode1.style.transform = ''
+//         contentCode1.style.display = ''
+//         contentCode1.style.visibility = ''
+//         contentCode1.style.opacity = ''
+//         contentCode1.style.transition = '0.5s'
+//     }
+// });
 
 
 // Button 2
