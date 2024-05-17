@@ -36,60 +36,7 @@ if (window.location.hash) {
 const sticky = document.querySelector('.sticky')
 
 sticky.addEventListener('click', () => {
-    const newWindow = window.open('http://127.0.0.1:5501/index.html');
-
-    if (!newWindow) {
-        console.error('Failed to open new window');
-        return;
-    }
-
-    newWindow.onload = () => {
-        try {
-            const contentCode2 = newWindow.document.getElementById('contentCode2');
-            const secretButtonCode2 = newWindow.document.getElementById('secretButtonCode3');
-            const arrowCode2 = newWindow.document.getElementById('arrowCode2');
-            const buttonCode2 = newWindow.document.getElementById('buttonCode2');
-
-            // Check if the elements exist before interacting with them
-            if (!contentCode2) {
-                console.error('Element contentCode2 not found');
-                return;
-            }
-
-            if (!secretButtonCode2) {
-                console.error('Element secretButtonCode3 not found');
-                return;
-            }
-
-            if (!arrowCode2) {
-                console.error('Element arrowCode2 not found');
-                return;
-            }
-
-            if (!buttonCode2) {
-                console.error('Element buttonCode2 not found');
-                return;
-            }
-
-            // Proceed with the manipulation if all elements are found
-            contentCode2.style.display = 'block';
-            contentCode2.style.visibility = 'visible';
-            const contentHeight = contentCode2.scrollHeight;
-            buttonCode2.style.height = contentHeight + 100 + 'px';
-            arrowCode2.style.transform = 'rotate(90deg)';
-            contentCode2.style.opacity = '1';
-            contentCode2.style.transition = '2s ease-out';
-        } catch (error) {
-            console.error('Error interacting with the new window:', error);
-        }
-    };
-
-    newWindow.onerror = (error) => {
-        console.error('Error loading new window:', error);
-    };
+    window.location.href = 'http://127.0.0.1:5501/index.html';
 });
-
-
-
 
 
