@@ -32,3 +32,28 @@ if (window.location.hash) {
         target.style.border = "2px solid red"; // Highlight the logo
     }
 };
+
+const sticky = document.querySelector('.sticky')
+
+sticky.addEventListener('click', () => {
+    const newWindow = window.open('http://127.0.0.1:5501/index.html');
+
+    newWindow.onload = () => {
+        const contentCode2 = newWindow.document.getElementById('contentCode2');
+        const secretButtonCode2 = newWindow.document.getElementById('secretButtonCode3');
+        const arrowCode2 = newWindow.document.getElementById('arrowCode2');
+        const buttonCode2 = newWindow.document.getElementById('buttonCode2');
+
+        contentCode2.style.display = 'block';
+        contentCode2.style.visibility = 'visible';
+        const contentHeight = contentCode2.scrollHeight;
+        buttonCode2.style.height = contentHeight + 100 + 'px';
+        arrowCode2.style.transform = 'rotate(90deg)';
+        toggleCode2 = true;
+        contentCode2.style.opacity = '1';
+        contentCode2.style.transition = '2s ease-out';
+    }
+});
+
+
+
