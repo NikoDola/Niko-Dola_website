@@ -50,11 +50,28 @@ sticky.addEventListener('click', () => {
             const arrowCode2 = newWindow.document.getElementById('arrowCode2');
             const buttonCode2 = newWindow.document.getElementById('buttonCode2');
 
-            if (!contentCode2 || !arrowCode2 || !buttonCode2) {
-                console.error('Elements not found in the new window');
+            // Check if the elements exist before interacting with them
+            if (!contentCode2) {
+                console.error('Element contentCode2 not found');
                 return;
             }
 
+            if (!secretButtonCode2) {
+                console.error('Element secretButtonCode3 not found');
+                return;
+            }
+
+            if (!arrowCode2) {
+                console.error('Element arrowCode2 not found');
+                return;
+            }
+
+            if (!buttonCode2) {
+                console.error('Element buttonCode2 not found');
+                return;
+            }
+
+            // Proceed with the manipulation if all elements are found
             contentCode2.style.display = 'block';
             contentCode2.style.visibility = 'visible';
             const contentHeight = contentCode2.scrollHeight;
@@ -71,6 +88,7 @@ sticky.addEventListener('click', () => {
         console.error('Error loading new window:', error);
     };
 });
+
 
 
 
