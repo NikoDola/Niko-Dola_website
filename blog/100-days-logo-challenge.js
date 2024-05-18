@@ -40,3 +40,24 @@ sticky.addEventListener('click', () => {
 });
 
 
+const projectDescription = document.querySelector('.project_description')
+const readMore = document.querySelector('.read__more')
+
+let toggle = false
+
+const originalText = projectDescription.textContent
+const shortText = projectDescription.textContent.substring(0,349)
+projectDescription.textContent = shortText
+readMore.addEventListener('click', ()=>{
+    if(!toggle){
+        projectDescription.textContent = originalText
+        readMore.style.display = 'none'
+        toggle = true
+
+    }else{
+        projectDescription.textContent = shortText
+        toggle = false
+    }
+})
+
+

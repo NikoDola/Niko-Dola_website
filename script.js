@@ -187,7 +187,10 @@ function ContactEmail(){
     );
 };
 
-function LogoEmail(){
+function LogoEmail(e){
+
+    
+
     const colorAray = Array.from(colorSet).join(', '); 
     const inspirationAray = Array.from(inspirationSet).join(', '); 
  
