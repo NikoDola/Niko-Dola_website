@@ -9,6 +9,7 @@ body{
     margin: 0;
     background: var(--background-color);
     overflow-x: hidden;
+    justify-content: center;
 }
 
 
@@ -88,6 +89,7 @@ button:hover{
     box-sizing: border-box;
     border-radius: 100%;
     transition: 0.5s;
+  
 }
 
 .bradaKosa{
@@ -132,10 +134,10 @@ button:hover{
 }
 
 .main{
-    width: 100vw;
+    width: 90%;
     position: absolute;
     display: flex;
-    justify-content: space-between;
+
     gap: 10px;
     flex-direction: column;
     align-items: center;
@@ -147,9 +149,10 @@ button:hover{
 }
 
 .social_media_buttons{
+    flex:1;
     display: flex;
     gap: 15px;
-    width: 5%;
+    flex-wrap: 1;
     justify-content: center;
     align-items: center;
 }
@@ -163,6 +166,7 @@ button:hover{
     justify-content: space-around;
     flex-direction: column;
     gap: 10px; 
+
 }
 
 .button{
@@ -185,6 +189,7 @@ button:hover{
 
 .singleSocial{
     height: 65px;
+
 }
 
 .icon{
@@ -452,6 +457,7 @@ width: 100%;
 
 .nameBrief, .emailBrief{
     width: 100%;
+    color: var(--text-color);
 }
 
 .socialBg{
@@ -547,39 +553,75 @@ width: 100%;
     margin-bottom: 30px; 
 }
 
-.foother{
+.footer {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center;    
     justify-content: space-between;
 }
 
-.myBlog{
+.footer >p {
+    margin: 0;
+    text-align: center;
+ 
+}
+
+.blog_available {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.blog, .available {
+  
+    margin: 0;
+}
+
+.blog{
+    cursor: pointer;
+}
+
+.available::after{
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    position: relative;
+    bottom: 15px;
+    left: 135px;
+    border-radius: 100%;
+}
+
+.personal__email, .personal_phone{
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+i{
+    letter-spacing: 5px;
+}
+.phone_email{
+    position: fixed;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--main-color);
+    bottom: 0;
+}
+
+.phone_email>p{
+    text-align: center;
     margin: 0;
     padding: 0;
-    cursor: pointer;
-    transition: 0.3s;
-    position: relative;
+    color: var(--background-color);
+    
 }
 
-.myBlog:hover{
-    letter-spacing: 3px;
-}
-
-.myBlog::before{
-    position: absolute;
-    content: '';
-    top: 25px;
-    display: inline-block;
-    width: 0%;
-    height: 5px;
-    background-color: var(--main-color);
-    transition: 0.3s ease;
-}
-
-.myBlog:hover::before{
-    width: 100%;
-}
 
 #backgroundSection{
     box-sizing: border-box;
@@ -598,6 +640,11 @@ width: 100%;
         grid-auto-flow: row; /* Arrange grid items in rows */
         row-gap: 20px;
     }
+    .footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }
 
 @media (max-width: 700px) {
@@ -644,12 +691,13 @@ width: 100%;
         row-gap: 20px;
     }
 
- 
+    
 
     .main{
         padding: 3%;
         overflow-x: hidden;
         margin-top: 2%;
+        width: 100%;
     }
 
     .button{
@@ -699,6 +747,7 @@ width: 100%;
         font-size: 25px;
     }
     .main{
+        width: 100%;
         padding-right: 3%;
         padding-left: 3%;
     }
