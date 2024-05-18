@@ -1,4 +1,4 @@
-
+@import '../style.css';
 
 *{
     text-align: center;
@@ -80,13 +80,22 @@ html {
 }
 
 .sticky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     background-color: white;
     position:fixed;
-    width: 100px;
+    width: 180px;
+    height: 60px;
     right: 0;
     bottom: 0;
     z-index: 10;
+    background-color: var(--main-color);
+}
+
+.sticky >p{
+    font-weight: 700;
 }
 
 .sticky *{
