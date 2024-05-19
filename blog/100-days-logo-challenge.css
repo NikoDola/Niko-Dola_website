@@ -45,6 +45,7 @@
 }
 .days{
     margin: 0;
+    font-size: 35px;
 }
 .challenge{
     text-align: center;
@@ -78,6 +79,12 @@
 
 .company__name{
     text-align: center;
+}
+
+.statusLog{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
 }
 
 html {
