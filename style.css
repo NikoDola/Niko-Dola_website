@@ -12,6 +12,9 @@ body{
     justify-content: center;
 }
 
+.rc-anchor-normal-footer{
+    display: none !important;
+}
 
 placeholder::content{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif

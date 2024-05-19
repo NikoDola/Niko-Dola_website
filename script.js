@@ -172,8 +172,9 @@ console.log(contactEmail.value);
 
 
 function ContactEmail(){
-
+grecaptcha.getResponse()
     Email.send({
+        
         Host : "smtp.elasticemail.com",
         Username : "nikodola@gmail.com",
         Password : "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
@@ -187,39 +188,46 @@ function ContactEmail(){
     );
 };
 
-function LogoEmail(e){
+    function LogoEmail(e){
+        
+        e.preventDefault()
+        // const recaptchaResponse = grecaptcha.getResponse();
 
+        // if (recaptchaResponse.length === 0) {
+        // alert('Please complete the reCAPTCHA.');
+        // } else {
+        // // Proceed with form submission
+        // this.submit();
+        // }
+        const colorAray = Array.from(colorSet).join(', '); 
+        const inspirationAray = Array.from(inspirationSet).join(', '); 
     
+            const params = {
+                companyName: companyNameInput.value,
+                tagLine: taglineInput.value,
+                has: hasInput.value,
+                hasNot: hasNotInput.value,
+                color: colorAray,
+                inspiration: inspirationAray,
+                name: nameInput.value,
+                email: emailInput.value
+            };
 
-    const colorAray = Array.from(colorSet).join(', '); 
-    const inspirationAray = Array.from(inspirationSet).join(', '); 
- 
-        const params = {
-            companyName: companyNameInput.value,
-            tagLine: taglineInput.value,
-            has: hasInput.value,
-            hasNot: hasNotInput.value,
-            color: colorAray,
-            inspiration: inspirationAray,
-            name: nameInput.value,
-            email: emailInput.value
-        };
-
-        // Sending email
-        emailjs.send("service_3r25scb", "template_7m9enxl", params)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                submitPopUp.style.display = 'block';
-            }, function(error) {
-                console.log('FAILED...', error);
-                submitPopUp.textContent = `Fail to send message because of ${error}`
-                submitPopUp.style.color = 'red'
-                submitPopUp.style.display = 'block';
-                
-            });
+            // Sending email
+            emailjs.send("service_3r25scb", "template_7m9enxl", params)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    submitPopUp.style.display = 'block';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    submitPopUp.textContent = `Fail to send message because of ${error}`
+                    submitPopUp.style.color = 'red'
+                    submitPopUp.style.display = 'block';
+                    
+                });
 
 
-}
+    }
 
 
 
