@@ -113,6 +113,7 @@ html {
 .project_description{
     width: 60%;
     margin: 0 auto;
+    color: lightgrey
     
 }
 
@@ -125,6 +126,8 @@ html {
     }
     .project_description{
         width: 90%;
+        font-size: 18px;
+        letter-spacing: 1px;
     }
 }
 
