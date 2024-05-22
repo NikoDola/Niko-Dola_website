@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             day4.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
 
+        
+
         // const gridImage5 = document.getElementById('gridImage5')
         // const day5 = document.getElementById('day5')
         // gridImage5.addEventListener('click', () => {
