@@ -1,6 +1,35 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const parent = document.getElementById('logo__parent');
 
+    function scrolling(){
+        const gridImage1 = document.getElementById('gridImage1')
+        const day1 = document.getElementById('day1')
+        gridImage1.addEventListener('click', () => {
+            console.log('eee')
+            day1.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+          });
+
+        const gridImage2 = document.getElementById('gridImage2')
+        const day2 = document.getElementById('day2')
+        gridImage2.addEventListener('click', () => {
+            console.log('eee')
+            day2.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        });
+
+        const gridImage3 = document.getElementById('gridImage3')
+        const day3 = document.getElementById('day3')
+        gridImage3.addEventListener('click', () => {
+            console.log('eee')
+            day3.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        });
+
+    }
+    scrolling()
+  
+
+ 
+
+
     // Select all child divs with the class 'main__blog' within the parent div
     const childDivsNodeList = parent.querySelectorAll('.main__blog');
 
@@ -66,6 +95,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // const shortText = originalText.substring(0, 349);
     projectDescription.textContent = shortText;
 
+
     // readMore.addEventListener('click', () => {
     //     if (!toggle) {
     //         projectDescription.textContent = originalText;
@@ -77,3 +107,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //     }
     // });
 });
+
+

@@ -1,5 +1,9 @@
 @import '../.style.css';
 
+:root{
+    --main-width: 60%
+}
+
 *{
     text-align: center;
 }
@@ -10,8 +14,29 @@
 
 .title{
     margin: 0 auto;
-    width: 60%;
+    width: var(--main-width);
     
+}
+
+.grid{
+    display: inline-block;
+
+    width: 100%;
+    height: 300px;
+    width: var(--main-width);
+    margin: 0 auto;
+}
+
+.grid__image{
+    width: 165px;
+    height: 165px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.grid__image:hover{
+    filter: grayscale(0);
 }
 
 .read__more{
@@ -22,7 +47,7 @@
 .image__logo{
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: var(--main-width);
 }
 
 .main__blog{
@@ -53,7 +78,7 @@
 
 .hashtags{
     text-align: center;
-    width: 60%;
+    width: var(--main-width);
     margin: 0 auto;
 
 }
@@ -110,24 +135,34 @@ html {
     color: black;
 }
 
-.project_description{
-    width: 60%;
+.description{
+    width: var(--main-width);
     margin: 0 auto;
-    color: lightgrey
+    color: lightgrey;
+    width: var(--main-width);
     
 }
 
 @media screen and (max-width: 768px) {
+
+    :root{
+        --main-width: 90%
+    }
+    
     .hashtags, .image__logo, .title, .header{
-        width: 90%;
+        width: var(--main-width);
     }
     .sticky{
         width: 100%;
     }
     .project_description{
-        width: 90%;
+        width: var(--main-width);
         font-size: 18px;
         letter-spacing: 1px;
+    }
+    .grid__image{
+        width: 100px;
+        height: 100px;
     }
 }
 
