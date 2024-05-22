@@ -137,7 +137,7 @@ html {
     color: black;
 }
 
-.description{
+.description, .project_description{
     width: var(--main-width);
     margin: 0 auto;
     color: lightgrey;
