@@ -28,15 +28,17 @@
 }
 
 .grid__image{
+    position: relative;
     width: 165px;
     height: 165px;
     cursor: pointer;
     filter: grayscale(100%);
-    transition: 0.3s;
+    transition: outline 0.3s, filter 0.5s;
 }
 
 .grid__image:hover{
     filter: grayscale(0);
+   outline: solid var(--main-color);
 }
 
 .read__more{
