@@ -5,33 +5,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const gridImage1 = document.getElementById('gridImage1')
         const day1 = document.getElementById('day1')
         gridImage1.addEventListener('click', () => {
-            day1.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-          });
+        day1.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        });
 
         const gridImage2 = document.getElementById('gridImage2')
         const day2 = document.getElementById('day2')
         gridImage2.addEventListener('click', () => {
-            day2.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        day2.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
 
         const gridImage3 = document.getElementById('gridImage3')
         const day3 = document.getElementById('day3')
         gridImage3.addEventListener('click', () => {
-            day3.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        day3.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
 
         const gridImage4 = document.getElementById('gridImage4')
         const day4 = document.getElementById('day4')
         gridImage4.addEventListener('click', () => {
-            day4.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        day4.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
         
         const gridImage5 = document.getElementById('gridImage5')
         const day5 = document.getElementById('day5')
         gridImage5.addEventListener('click', () => {
-            day5.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        day5.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
         
+        const gridImage6 = document.getElementById('gridImage6')
+        const day6 = document.getElementById('day6')
+        gridImage6.addEventListener('click', () => {
+        day6.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        });
 
         // const gridImage5 = document.getElementById('gridImage5')
         // const day5 = document.getElementById('day5')
