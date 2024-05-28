@@ -44,6 +44,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         day7.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
 
+        const gridImage8 = document.getElementById('gridImage8')
+        const day8 = document.getElementById('day8')
+        gridImage8.addEventListener('click', () => {
+        day8.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        });
+
         
     }
     scrolling()
