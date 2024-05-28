@@ -38,54 +38,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         day6.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
 
-        // const gridImage5 = document.getElementById('gridImage5')
-        // const day5 = document.getElementById('day5')
-        // gridImage5.addEventListener('click', () => {
-        //     day5.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
+        const gridImage7 = document.getElementById('gridImage7')
+        const day7 = document.getElementById('day7')
+        gridImage7.addEventListener('click', () => {
+        day7.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        });
 
-        // const gridImage6 = document.getElementById('gridImage6')
-        // const day6 = document.getElementById('day6')
-        // gridImage6.addEventListener('click', () => {
-        //     day6.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
-
-        // const gridImage7 = document.getElementById('gridImage7')
-        // const day7 = document.getElementById('day7')
-        // gridImage7.addEventListener('click', () => {
-        //     day7.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
-
-        // const gridImage8 = document.getElementById('gridImage8')
-        // const day8 = document.getElementById('day8')
-        // gridImage8.addEventListener('click', () => {
-        //     day8.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
-
-        // const gridImage9 = document.getElementById('gridImage9')
-        // const day9 = document.getElementById('day9')
-        // gridImage9.addEventListener('click', () => {
-        //     day9.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
-
-        // const gridImage10 = document.getElementById('gridImage10')
-        // const day10 = document.getElementById('day10')
-        // gridImage10.addEventListener('click', () => {
-        //     day10.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
-
-        // const gridImage11 = document.getElementById('gridImage11')
-        // const day11 = document.getElementById('day11')
-        // gridImage11.addEventListener('click', () => {
-        //     day11.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
-
-        // const gridImage12 = document.getElementById('gridImage12')
-        // const day12 = document.getElementById('day12')
-        // gridImage12.addEventListener('click', () => {
-        //     day12.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
-        // });
-
+        
     }
     scrolling()
   
