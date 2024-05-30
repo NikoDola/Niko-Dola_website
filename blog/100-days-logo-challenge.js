@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         day8.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
         });
 
+        const gridImage9 = document.getElementById('gridImage9')
+        const day9 = document.getElementById('day9')
+        gridImage8.addEventListener('click', () => {
+        day8.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to day1
+        });
         
     }
     scrolling()
