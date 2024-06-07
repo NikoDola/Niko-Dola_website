@@ -128,17 +128,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // const shortText = originalText.substring(0, 349);
     projectDescription.textContent = shortText;
 
-
-    // readMore.addEventListener('click', () => {
-    //     if (!toggle) {
-    //         projectDescription.textContent = originalText;
-    //         readMore.style.display = 'none';
-    //         toggle = true;
-    //     } else {
-    //         projectDescription.textContent = shortText;
-    //         toggle = false;
-    //     }
-    // });
 });
 
 
