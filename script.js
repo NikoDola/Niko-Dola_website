@@ -225,8 +225,6 @@ grecaptcha.getResponse()
                     submitPopUp.style.display = 'block';
                     
                 });
-
-
     }
 
 
