@@ -19,11 +19,12 @@
 
 .grid{
     display: inline-block;
-
+    
     width: 100%;
     height: 300px;
     width: var(--main-width);
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .grid__image{
