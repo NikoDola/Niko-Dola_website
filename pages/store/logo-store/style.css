@@ -87,7 +87,7 @@
     margin: 0 auto;
     color: lightgrey;
     width: var(--main-width);
-    
+    width: 50%;
 }
 
 
