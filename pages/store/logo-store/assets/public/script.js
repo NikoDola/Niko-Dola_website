@@ -37,6 +37,19 @@ fetch('../assets/public/data.json')
     console.error('Error fetching data:', error);
   });
 
-
+  const main = document.createElement('div');
+  const text = document.createElement('h3');
+  const aLinkText = document.createElement('a');
+  
+  aLinkText.href = '/'
+  aLinkText.textContent = 'Get Your Custom Logo';
+  aLinkText.style.color = '#132D40';
+  aLinkText.style.fontFamily = 'Roboto';
+  
+  main.style.cssText = 'background: #87D0D3; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer;';
+  
+  text.appendChild(aLinkText);
+  main.appendChild(text);
+  document.body.appendChild(main);
 
 
