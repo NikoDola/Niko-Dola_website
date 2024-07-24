@@ -162,20 +162,40 @@ const submitPopUp2 = document.getElementById('submitPopUp2');
 console.log(contactEmail.value);
 
 function ContactEmail() {
-    grecaptcha.getResponse();
+    const contactName = document.getElementById('contactName').value;
+    const contactEmail = document.getElementById('contactEmail').value;
+    const contactMessage = document.getElementById('contactMessage').value;
+    const submitPopUp2 = document.getElementById('submitPopUp2');
+
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "nikodola@gmail.com",
         Password: "A15A80FEFB7C3FF1665E521EDB3C1500EFA6",
         To: 'dolovska@hotmail.com',
         From: "nikodola@gmail.com",
-        Subject: "Contact US",
-        Body: `Message: ${contactMessage.value}, 
-        Email: ${contactEmail.value}, Name: ${contactName.value}`
+        Subject: "Contact Us",
+        Body: `Message: ${contactMessage}, Email: ${contactEmail}, Name: ${contactName}`
     }).then(
-        submitPopUp2.style.display = 'block'
+        message => {
+            if (message == 'OK') {
+                submitPopUp2.textContent = 'Your message has been sent successfully!';
+                submitPopUp2.style.color = 'green';
+                submitPopUp2.style.display = 'block';
+            } else {
+                submitPopUp2.textContent = `Failed to send message: ${message}`;
+                submitPopUp2.style.color = 'red';
+                submitPopUp2.style.display = 'block';
+            }
+        }
+    ).catch(
+        error => {
+            submitPopUp2.textContent = `Failed to send message: ${error}`;
+            submitPopUp2.style.color = 'red';
+            submitPopUp2.style.display = 'block';
+        }
     );
 }
+
 
 function LogoEmail(e) {
     e.preventDefault();
