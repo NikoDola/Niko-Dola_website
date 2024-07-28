@@ -1,4 +1,5 @@
-const buttonCode1 = document.getElementById('buttonCode1');
+document.addEventListener('DOMContentLoaded', ()=>{
+    const buttonCode1 = document.getElementById('buttonCode1');
 const buttonCode2 = document.getElementById('buttonCode2');
 const buttonCode3 = document.getElementById('buttonCode3');
 
@@ -233,3 +234,6 @@ function LogoEmail(e) {
             submitPopUp.style.display = 'block';
         });
 }
+
+})
+
