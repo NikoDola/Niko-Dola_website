@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Cameras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        #camera-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .camera {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            width: calc(33% - 1rem);
+            box-sizing: border-box;
+        }
+
+        .camera img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .camera h3 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .camera p {
+            color: #666;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .camera {
+                width: calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .camera {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Connected Cameras</h1>
+    </header>
+    <main>
+        <section id="camera-list">
+            <!-- Cameras will be dynamically loaded here -->
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Replace with your API endpoint
+            const apiEndpoint = 'https://example.com/api/cameras';
+
+            fetch(apiEndpoint)
+                .then(response => response.json())
+                .then(data => {
+                    const cameraList = document.getElementById('camera-list');
+                    cameraList.innerHTML = '';
+
+                    data.cameras.forEach(camera => {
+                        const cameraElement = document.createElement('div');
+                        cameraElement.classList.add('camera');
+
+                        cameraElement.innerHTML = `
+                            <img src="${camera.imageUrl}" alt="${camera.name}">
+                            <h3>${camera.name}</h3>
+                            <p>${camera.description}</p>
+                        `;
+
+                        cameraList.appendChild(cameraElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching camera data:', error);
+                });
+        });
+    </script>
+</body>
+</html>
