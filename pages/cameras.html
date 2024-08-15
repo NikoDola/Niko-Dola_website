@@ -64,6 +64,11 @@
                 width: 100%;
             }
         }
+
+        #error-message {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -73,35 +78,47 @@
     <main>
         <section id="camera-list">
             <!-- Cameras will be dynamically loaded here -->
+            <p id="error-message"></p> <!-- Placeholder for error messages -->
         </section>
     </main>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Replace with your API endpoint
-            const apiEndpoint = 'https://example.com/api/cameras';
+            // Static JSON data for testing
+            const cameraData = {
+                "cameras": [
+                    {
+                        "name": "Camera 1",
+                        "imageUrl": "https://via.placeholder.com/150",
+                        "description": "Description for Camera 1"
+                    },
+                    {
+                        "name": "Camera 2",
+                        "imageUrl": "https://via.placeholder.com/150",
+                        "description": "Description for Camera 2"
+                    }
+                ]
+            };
 
-            fetch(apiEndpoint)
-                .then(response => response.json())
-                .then(data => {
-                    const cameraList = document.getElementById('camera-list');
-                    cameraList.innerHTML = '';
+            const cameraList = document.getElementById('camera-list');
+            cameraList.innerHTML = '';
 
-                    data.cameras.forEach(camera => {
-                        const cameraElement = document.createElement('div');
-                        cameraElement.classList.add('camera');
+            if (!cameraData.cameras || cameraData.cameras.length === 0) {
+                document.getElementById('error-message').textContent = 'No cameras available.';
+                return;
+            }
+            
+            cameraData.cameras.forEach(camera => {
+                const cameraElement = document.createElement('div');
+                cameraElement.classList.add('camera');
 
-                        cameraElement.innerHTML = `
-                            <img src="${camera.imageUrl}" alt="${camera.name}">
-                            <h3>${camera.name}</h3>
-                            <p>${camera.description}</p>
-                        `;
+                cameraElement.innerHTML = `
+                    <img src="${camera.imageUrl}" alt="${camera.name}">
+                    <h3>${camera.name}</h3>
+                    <p>${camera.description}</p>
+                `;
 
-                        cameraList.appendChild(cameraElement);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching camera data:', error);
-                });
+                cameraList.appendChild(cameraElement);
+            });
         });
     </script>
 </body>
